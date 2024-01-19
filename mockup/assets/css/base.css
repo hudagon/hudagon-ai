@@ -67,6 +67,7 @@
     --fs-larger-5: clamp(1.3994rem, 1.0228rem + 1.8827vw, 2.3325rem);
 
     --fs-main-title: clamp(3.1875rem, 2.2039rem + 4.918vw, 5.625rem);
+    --fs-main-title-mobile: clamp(1.5rem, 0.4314rem + 4.7493vw, 2.625rem);
 
     /* Border-radius */
     --border-radius-1: 3px;
@@ -86,7 +87,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 3;
 }
 
 .border {
@@ -221,6 +222,16 @@
     } 100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes responsive-tablet-content-slide-up-down {
+    0% {
+        opacity: 1;
+        transform: translateY(-100%);
+    } 100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
