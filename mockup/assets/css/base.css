@@ -1,0 +1,258 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600&display=swap');
+
+/*#region BASE*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+.fw {
+    height: inherit;
+    overflow-x: hidden;
+}
+
+.hh {
+    height: 47%;
+}
+
+.gap-handle-landing-page {
+    display: flex !important;
+    flex-direction: column;
+    gap: calc((100svh - var(--top-info-height) - var(--header-height) - var(--banner-height) - var(--service-height)) / 4);
+}
+/*#endregion*/
+
+/*#region VARIABLES*/
+:root {
+    /* Landing Page Height */
+    --top-info-height: 3.6svh;
+    --header-height: 7.6svh;
+    --banner-height: 50svh;
+    --service-height: 33svh;
+
+    /* Color */
+    --primary-color: #3e008a;
+    --secondary-color: #c5b358;
+
+    --dark-border-color: #282b28;
+    --light-border-color: #8f8f8f61;
+
+    --dark-background-color: #09060a;
+    --light-background-color: whitesmoke;
+
+    --dark-panel-color: #050305;
+
+    --dark-text-color: #dfdfdf;
+    --light-text-color: #dfdfdf;
+
+    /* Overlay color */
+    --overlay-color: rgba(0, 0, 0, 0.6);
+
+    /* font-family */
+    --font-primary: 'Signika Negative', sans-serif;
+    --font-secondary: 'EB Garamond', serif;
+
+    /* Font Size */
+    --fs-less-2: clamp(0.3344rem, 0.3084rem + 0.1297vw, 0.43rem);
+    --fs-less-1: clamp(0.5406rem, 0.4988rem + 0.2093vw, 0.695rem);
+    --fs-normal: clamp(0.875rem, 0.8072rem + 0.339vw, 1.125rem);
+
+
+
+    --fs-larger-1: clamp(0.675rem, 0.4934rem + 0.9079vw, 1.125rem);
+    --fs-larger-2: clamp(0.81rem, 0.5921rem + 1.0895vw, 1.35rem);
+    --fs-larger-3: clamp(0.9719rem, 0.7103rem + 1.3077vw, 1.62rem);
+    --fs-larger-4: clamp(1.1663rem, 0.8525rem + 1.5687vw, 1.9438rem);
+    --fs-larger-5: clamp(1.3994rem, 1.0228rem + 1.8827vw, 2.3325rem);
+
+    --fs-main-title: clamp(3.1875rem, 2.2039rem + 4.918vw, 5.625rem);
+
+    /* Border-radius */
+    --border-radius-1: 3px;
+    --border-radius-2: 6px;
+    --border-radius-3: 9px;
+}
+
+/*#endregion*/
+
+/*#region Frame Picture*/
+.border-container {
+    max-height: 80%;
+    height: auto;
+    max-width: 80%;
+    min-width: 20%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.border {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 9px solid rgb(61, 61, 61);
+    background-color: white;
+    -moz-box-shadow: -11px 11px 27px -4px rgba(0, 0, 0, 0.75), inset -1px 1px 6px 1px rgba(0, 0, 0, .24);
+    -webkit-box-shadow: -11px 11px 27px -4px rgba(0, 0, 0, 0.75), inset -1px 1px 6px 1px rgba(0, 0, 0, .24);
+    box-shadow: -11px 11px 27px -4px rgba(0, 0, 0, 0.75), inset -1px 1px 6px 1px rgba(0, 0, 0, .24);
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    border: 6px solid #dfdfdf;
+    box-shadow: inset -1px 1px 6px 1px rgba(0, 0, 0, .24);
+}
+
+.image {
+    background-image: url("/mockup/assets/images/van-gogh-test.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.ar-11 {
+    aspect-ratio: 1/1;
+}
+
+.ar-169 {
+    aspect-ratio: 16 / 9;
+}
+
+.ar-916 {
+    aspect-ratio: 9 / 16;
+}
+
+.ar-34 {
+    aspect-ratio: 3 / 4;
+}
+
+.ar-43 {
+    aspect-ratio: 4 / 3;
+}
+
+/*#endregion*/
+
+/*#region BUTTON*/
+.btn {
+    border-radius: 18px;
+    color: var(--text-color);
+    line-height: 1.2;
+    white-space: nowrap;
+    font-size: var(--fs-normal);
+}
+
+.btn.sm {
+    padding: 9px 18px;
+    width: 120px;
+}
+
+.btn.md {
+    padding: 9px 18px;
+    width: 150px;
+}
+
+.btn.lg {}
+
+.btn.pr {
+    background-color: var(--primary-color);
+}
+
+.btn.sc {}
+
+/*#endregion*/
+
+/*#region OTHER*/   
+@keyframes landing-page-clickbate-banner-animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+@keyframes landing-page-banner-right-side-bannermove {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-60%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes landing-page-responsive-right-side-move {
+    0% {
+        transform: translateY(-30%);
+    }
+
+    50% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes overlay__fade-in {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes responsive-tablet-content-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    } 100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hover-effect-1 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hover-effect-1:hover {
+    color: var(--secondary-color);
+    filter: brightness(1.2);
+}
+
+.hover-effect-button-1 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hover-effect-button-1:hover {
+    color: var(--secondary-color);
+    filter: brightness(1.2);
+    box-shadow: 0px 1px 21px -9px #c5b358;
+}
+
+.hover-effect-menu-1 {
+    cursor: pointer;   
+    transition: all 0.3s ease;
+}
+
+.hover-effect-menu-1:hover {
+    color: var(--secondary-color);
+    filter: brightness(1.2);
+    transform: translateX(3px);
+}
+/*#endregion*/

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hudagon AI</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid-system.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="landing-page-wrapper">
+        <div class="grid fw">
+            <div class="row">
+                <div class="col c-12">
+                    <!-- Top Info -->
+                    <div class="top-info">
+                        <p class="top-info__slogan">
+                            Slogan...
+                        </p>
+
+                        <ul class="top-info__social-media-list">
+                            <li class="top-info__social-media-list__item hover-effect-1">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            <li class="top-info__social-media-list__item hover-effect-1">
+                                <i class="fa-brands fa-youtube"></i>
+                            </li>
+                            <li class="top-info__social-media-list__item hover-effect-1">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </li>
+                        </ul>
+
+                        <ul class="top-info__contact-list">
+                            <li class="top-info__contact-list__item hover-effect-1">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p class="top-info__contact-list__item__text">
+                                    amthanhloama@gmail.com
+                                </p>
+                            </li>
+                            <li class="top-info__contact-list__item hover-effect-1">
+                                |
+                            </li>
+                            <li class="top-info__contact-list__item hover-effect-1">
+                                <i class="fa-solid fa-phone"></i>
+                                <p class="top-info__contact-list__item__text">
+                                    0905123123
+                                </p>
+                            </li>
+                        </ul>
+
+                        <div class="top-info__hamburger-bar-group" id="hamburger-bar" onclick="menuOnClick()">
+                            <div id="bar1" class="top-info__hamburger-bar-group__bar"></div>
+                            <div id="bar2" class="top-info__hamburger-bar-group__bar"></div>
+                            <div id="bar3" class="top-info__hamburger-bar-group__bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col c-12">
+                    <!-- Landing Page Header -->
+                    <header class="landing-page-header">
+                        <div class="landing-page-header__logo">
+                            LOGO
+                        </div>
+
+                        <div class="landing-page-header__logo-responsive-group">
+                            <span class="landing-page-header__logo-responsive-group__slash"></span>
+                            <span class="landing-page-header__logo-responsive-group__logo">
+                                LOGO
+                            </span>
+                            <span class="landing-page-header__logo-responsive-group__slash"></span>
+                        </div>
+
+                        <div class="landing-page-header__button-group">
+                            <button type="button" class="landing-page-header__button-group__login hover-effect-1">
+                                Đăng nhập
+                            </button>
+                            <button type="button" class="btn md pr hover-effect-button-1">
+                                Đăng ký ngay
+                            </button>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <!-- Landing Page Responsive -->
+            <section class="landing-page__responsive">
+                <div class="landing-page__responsive__overlay" id="landing-page__responsive__overlay"></div>
+
+                <div class="landing-page__responsive__tablet-hamburger-content"
+                    id="landing-page__responsive__tablet-hamburger-content">
+                    <div class="landing-page__responsive__tablet-hamburger-content__header">
+                        <div class="landing-page__responsive__tablet-hamburger-content__header__login-group">
+                            <button type="button"
+                                class="hover-effect-1 btn sm landing-page__responsive__tablet-hamburger-content__header__login-group__login">
+                                Đăng nhập
+                            </button>
+                            <button type="button" class="btn sm pr hover-effect-button-1">
+                                Đăng ký
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="landing-page__responsive__tablet-hamburger-content__body">
+                        <ul class="landing-page__responsive__tablet-hamburger-content__body__list">
+                            <li
+                                class="hover-effect-menu-1 landing-page__responsive__tablet-hamburger-content__body__list__item">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Giỏ hàng</span>
+                            </li>
+                            <li
+                                class="hover-effect-menu-1 landing-page__responsive__tablet-hamburger-content__body__list__item">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Trang của bạn</span>
+                            </li>
+                            <li
+                                class="hover-effect-menu-1 landing-page__responsive__tablet-hamburger-content__body__list__item">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>Đăng xuất</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="landing-page__responsive__tablet-hamburger-content__footer">
+                        <div class="landing-page__responsive__tablet-hamburger-content__footer__contact-group">
+                            <div
+                                class="hover-effect-1 landing-page__responsive__tablet-hamburger-content__footer__contact-group__content">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p
+                                    class="landing-page__responsive__tablet-hamburger-content__footer__contact-group__content__text">
+                                    amthanhloama@gmail.com
+                                </p>
+                            </div>
+                            <div
+                                class="hover-effect-1 landing-page__responsive__tablet-hamburger-content__footer__contact-group__content">
+                                <i class="fa-solid fa-phone"></i>
+                                <p
+                                    class="landing-page__responsive__tablet-hamburger-content__footer__contact-group__content__text">
+                                    0905123123
+                                </p>
+                            </div>
+                        </div>
+
+                        <ul class="landing-page__responsive__tablet-hamburger-content__footer__social-media-list">
+                            <li
+                                class="landing-page__responsive__tablet-hamburger-content__footer__social-media-list__item hover-effect-1">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            <li
+                                class="landing-page__responsive__tablet-hamburger-content__footer__social-media-list__item hover-effect-1">
+                                <i class="fa-brands fa-youtube"></i>
+                            </li>
+                            <li
+                                class="landing-page__responsive__tablet-hamburger-content__footer__social-media-list__item hover-effect-1">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col c-8">
+                        <div class="landing-page__responsive__left-side">
+                            <div class="landing-page__responsive__left-side__upper-wrapper">
+                                <div class="landing-page__responsive__left-side__upper-wrapper__overlay"></div>
+                                <div class="landing-page__responsive__left-side__upper-wrapper__container">
+                                    <h1 class="landing-page__responsive__left-side__upper-wrapper__container__title">
+                                        Hudagon
+                                    </h1>
+                                    <p class="landing-page__responsive__left-side__upper-wrapper__container__desc">
+                                        Nền tảng bán tranh AI đầu tiên tại Việt Nam
+                                    </p>
+                                    <div
+                                        class="landing-page__responsive__left-side__upper-wrapper__container__sub_desc">
+                                        Giá chỉ từ 150.000 VNĐ
+                                    </div>
+                                    <button type="button" class="btn landing-page-clickbate">Mua ngay!</button>
+                                </div>
+                            </div>
+
+                            <div class="landing-page__responsive__left-side__lower-wrapper">
+                                <div class="landing-page__responsive__left-side__lower-wrapper__header">
+                                    <div class="landing-page__responsive__left-side__lower-wrapper__header__overlay">
+                                    </div>
+                                    <ul
+                                        class="landing-page__responsive__left-side__lower-wrapper__header__subject-list">
+                                        <li
+                                            class="landing-page__responsive__left-side__lower-wrapper__header__subject-list__item">
+                                            Chủ thể
+                                        </li>
+                                        <li
+                                            class="landing-page__responsive__left-side__lower-wrapper__header__subject-list__item">
+                                            Phong cách
+                                        </li>
+                                        <li
+                                            class="landing-page__responsive__left-side__lower-wrapper__header__subject-list__item">
+                                            Màu
+                                        </li>
+                                        <li
+                                            class="landing-page__responsive__left-side__lower-wrapper__header__subject-list__item">
+                                            Chủ đề
+                                        </li>
+                                        <li
+                                            class="landing-page__responsive__left-side__lower-wrapper__header__subject-list__item">
+                                            Dựa trên cảm hứng tác giả
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="landing-page__responsive__left-side__lower-wrapper__body">
+                                    <div class="col c-6 hh">
+                                        <div class="landing-page__responsive__left-side__lower-wrapper__body__card">
+                                            <img src="assets/images/con_nguoi.png" alt=""
+                                                class="landing-page__responsive__left-side__lower-wrapper__body__card__image" />
+                                            <div
+                                                class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group">
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__slash"></span>
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__text">
+                                                    Con người
+                                                </span>
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__slash"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col c-6 hh">
+                                        <div class="landing-page__responsive__left-side__lower-wrapper__body__card">
+                                            <img src="assets/images/dong_vat.png" alt=""
+                                                class="landing-page__responsive__left-side__lower-wrapper__body__card__image" />
+                                            <div
+                                                class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group">
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__slash"></span>
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__text">
+                                                    Động vật
+                                                </span>
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__slash"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col c-6 hh">
+                                        <div class="landing-page__responsive__left-side__lower-wrapper__body__card">
+                                            <img src="assets/images/phong_canh.png" alt=""
+                                                class="landing-page__responsive__left-side__lower-wrapper__body__card__image" />
+                                            <div
+                                                class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group">
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__slash"></span>
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__text">
+                                                    Phong cảnh
+                                                </span>
+                                                <span
+                                                    class="landing-page__responsive__left-side__lower-wrapper__body__card__text-group__slash"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col c-6 hh">
+                                        <div class="landing-page__responsive__left-side__lower-wrapper__body__card">
+                                            <div class="landing-page__responsive__left-side__lower-wrapper__body__card clickbait">
+                                                <p class="landing-page-service__body__subject-list__item__clickbait">
+                                                    Và hơn thế nữa...
+                                                    <span
+                                                        class="landing-page-service__body__subject-list__item__clickbait__link">
+                                                        Khám phá ngay
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col c-4">
+                        <div class="landing-page__responsive__right-side" id="responsive__right-side">
+                            <div class="landing-page__responsive__right-side__utilities">
+                                <div class="landing-page-banner__right-side__utilities__pause-group"
+                                    id="responsive__paused-button">
+                                    <i class="fa-solid fa-pause" id="responsive__button-pause"></i>
+                                    <i class="fa-solid fa-play" id="responsive__button-play"></i>
+                                </div>
+
+                                <div class="landing-page-banner__right-side__utilities__switch-theme-group">
+                                    <input type="checkbox"
+                                        class="landing-page-banner__right-side__utilities__switch-theme-group__checkbox responsive"
+                                        id="responsive__checkbox">
+                                    <label for="responsive__checkbox" id="responsive__change-theme-label"
+                                        class="landing-page-banner__right-side__utilities__switch-theme-group__checkbox-label responsive">
+                                        <i class="fas fa-moon"></i>
+                                        <i class="fas fa-sun"></i>
+                                        <span id="responsive__change-theme-ball"
+                                            class="landing-page-banner__right-side__utilities__switch-theme-group__ball responsive"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="landing-page__responsive__right-side__frame-containter"
+                                id="responsive__right-side__frame-containter">
+                                <div class="border-container">
+                                    <div class="border ar-916">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-43">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-169">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-916">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-11">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-34">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-169">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-34">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-43">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-container">
+                                    <div class="border ar-11">
+                                        <div class="frame">
+                                            <div class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="landing-page-banner-service-wrapper gap-handle-landing-page">
+                <div class="row">
+                    <div class="col c-12">
+                        <!-- Landing Page Banner -->
+                        <section class="landing-page-banner">
+                            <div class="landing-page-banner__overlay"></div>
+
+                            <div class="landing-page-banner__left-side">
+                                <div class="landing-page-banner__left-side__container">
+                                    <div class="landing-page-banner__left-side__container__sub_desc">
+                                        Giá chỉ từ 150.000 VNĐ
+                                    </div>
+                                    <h1 class="landing-page-banner__left-side__container__title">
+                                        Hudagon
+                                    </h1>
+                                    <p class="landing-page-banner__left-side__container__desc">
+                                        Nền tảng bán tranh AI đầu tiên tại Việt Nam
+                                    </p>
+                                    <button type="button" class="btn landing-page-clickbate">Mua ngay!</button>
+                                </div>
+                            </div>
+
+                            <div class="landing-page-banner__right-side" id="banner-right-side">
+                                <div class="landing-page-banner__right-side__frame-container"
+                                    id="banner-right-side-container">
+                                    <div class="border-container">
+                                        <div class="border ar-11">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-34">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-916">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-43">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-169">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-11">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-34">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-916">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-43">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-container">
+                                        <div class="border ar-169">
+                                            <div class="frame">
+                                                <div class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="landing-page-banner__right-side__utilities">
+                                    <div class="landing-page-banner__right-side__utilities__pause-group"
+                                        id="paused-button">
+                                        <i class="fa-solid fa-pause" id="button-pause"></i>
+                                        <i class="fa-solid fa-play" id="button-play"></i>
+                                    </div>
+
+                                    <div class="landing-page-banner__right-side__utilities__switch-theme-group">
+                                        <input type="checkbox"
+                                            class="landing-page-banner__right-side__utilities__switch-theme-group__checkbox"
+                                            id="checkbox">
+                                        <label for="checkbox" id="change-theme-label"
+                                            class="landing-page-banner__right-side__utilities__switch-theme-group__checkbox-label">
+                                            <i class="fas fa-moon"></i>
+                                            <i class="fas fa-sun"></i>
+                                            <span id="change-theme-ball"
+                                                class="landing-page-banner__right-side__utilities__switch-theme-group__ball"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col c-12">
+                        <!-- Landing Page Service -->
+                        <section class="landing-page-service">
+                            <div class="landing-page-service__header">
+                                <ul class="landing-page-service__header__menu-list">
+                                    <li class="landing-page-service__header__menu-list__item activated">
+                                        Chủ thể
+                                    </li>
+                                    <li class="landing-page-service__header__menu-list__item">
+                                        Phong cách
+                                    </li>
+                                    <li class="landing-page-service__header__menu-list__item">
+                                        Màu
+                                    </li>
+                                    <li class="landing-page-service__header__menu-list__item">
+                                        Chủ đề
+                                    </li>
+                                    <li class="landing-page-service__header__menu-list__item">
+                                        Dựa trên cảm hứng tác giả
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="landing-page-service__body">
+                                <div class="landing-page-service__body__subject-list">
+                                    <div class="col c-3">
+                                        <div class="landing-page-service__body__subject-list__item">
+                                            <div class="landing-page-service__body__subject-list__item__text-group">
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__slash"></span>
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__title">
+                                                    Con người
+                                                </span>
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__slash"></span>
+                                            </div>
+                                            <img src="assets/images/con_nguoi.png"
+                                                class="landing-page-service__body__subject-list__item__image"
+                                                alt="human-subject">
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="landing-page-service__body__subject-list__item">
+                                            <div class="landing-page-service__body__subject-list__item__text-group">
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__slash"></span>
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__title">
+                                                    Động vật
+                                                </span>
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__slash"></span>
+                                            </div>
+                                            <img src="assets/images/dong_vat.png"
+                                                class="landing-page-service__body__subject-list__item__image"
+                                                alt="human-subject">
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="landing-page-service__body__subject-list__item">
+                                            <div class="landing-page-service__body__subject-list__item__text-group">
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__slash"></span>
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__title">
+                                                    Phong cảnh
+                                                </span>
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__text-group__slash"></span>
+                                            </div>
+                                            <img src="assets/images/phong_canh.png"
+                                                class="landing-page-service__body__subject-list__item__image"
+                                                alt="human-subject">
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="landing-page-service__body__subject-list__item clickbait">
+                                            <p class="landing-page-service__body__subject-list__item__clickbait">
+                                                Và hơn thế nữa...
+                                                <span
+                                                    class="landing-page-service__body__subject-list__item__clickbait__link">
+                                                    Khám phá ngay
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const checkbox = document.getElementById("checkbox");
+    const bannerRightSide = document.getElementById("banner-right-side");
+    const changeThemeLabel = document.getElementById("change-theme-label");
+    const changeThemeBall = document.getElementById("change-theme-ball");
+    const pausedButton = document.getElementById("paused-button");
+    const bannerRightSideContainer = document.getElementById("banner-right-side-container");
+    const buttonPause = document.getElementById("button-pause");
+    const buttonPlay = document.getElementById("button-play");
+
+    checkbox.addEventListener("change", () => {
+        bannerRightSide.classList.toggle("dark-mode");
+        changeThemeLabel.classList.toggle("dark-mode");
+        changeThemeBall.classList.toggle("dark-mode");
+        pausedButton.classList.toggle("dark-mode");
+    })
+
+    pausedButton.addEventListener("click", () => {
+        bannerRightSideContainer.classList.toggle("paused");
+        buttonPlay.classList.toggle("paused");
+        buttonPause.classList.toggle("paused");
+    })
+
+    // -------------------- Responsive
+    const responsiveCheckbox = document.getElementById("responsive__checkbox");
+    const responsiveRightSide = document.getElementById("responsive__right-side");
+    const responsiveChangeThemeLabel = document.getElementById("responsive__change-theme-label");
+    const responsiveChangeThemeBall = document.getElementById("responsive__change-theme-ball");
+    const responsivePausedButton = document.getElementById("responsive__paused-button");
+    const responsiveRightSideFrameContainer = document.getElementById("responsive__right-side__frame-containter");
+    const responsiveButtonPause = document.getElementById("responsive__button-pause");
+    const responsiveButtonPlay = document.getElementById("responsive__button-play");
+
+    responsiveCheckbox.addEventListener("change", () => {
+        responsiveRightSide.classList.toggle("dark-mode");
+        responsiveChangeThemeLabel.classList.toggle("dark-mode");
+        responsiveChangeThemeBall.classList.toggle("dark-mode");
+        responsivePausedButton.classList.toggle("dark-mode");
+    });
+
+    responsivePausedButton.addEventListener("click", () => {
+        responsiveRightSideFrameContainer.classList.toggle("paused");
+        responsiveButtonPlay.classList.toggle("paused");
+        responsiveButtonPause.classList.toggle("paused");
+    });
+
+
+    const hamburgerOverlay = document.getElementById("landing-page__responsive__overlay");
+    const hamburgerContent = document.getElementById("landing-page__responsive__tablet-hamburger-content");
+    function menuOnClick() {
+        document.getElementById("hamburger-bar").classList.toggle("hamburger-toggle");
+
+        if (hamburgerOverlay.style.display == "") {
+            hamburgerOverlay.style.display = "block";
+        } else {
+            hamburgerOverlay.style.display = "";
+        }
+
+        if (hamburgerContent.style.display == "") {
+            hamburgerContent.style.display = "flex";
+        } else {
+            hamburgerContent.style.display = "";
+        }
+    }
+</script>
+
+</html>
