@@ -1,15 +1,10 @@
-body {
-    font-family: var(--font-primary);
-    background-color: var(--dark-background-color);
-    color: var(--dark-text-color);
-    font-size: var(--fs-normal);
-    font-weight: 300;
-}
-
 /* Landing Page */
 .landing-page-wrapper {
     height: 100svh;
     width: 100vw;
+    padding-bottom: 21px;
+    max-height: 1200px !important;
+    max-width: 2100px;
     min-width: 360px;
 }
 
@@ -220,7 +215,7 @@ body {
 .landing-page__responsive__left-side__upper-wrapper {
     height: 56%;
     min-height: 300px;
-    background-image: url("../images/van-gogh-test.png");
+    background-image: url("../assets/images/van-gogh-test.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -378,7 +373,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 21px;
+    gap: 3px;
     flex-direction: column;
 
     animation: landing-page-responsive-right-side-move 102s linear infinite;
@@ -450,7 +445,6 @@ body {
 .landing-page__responsive__right-side__utilities__switch-theme-group__checkbox:checked+.landing-page__responsive__right-side__utilities__switch-theme-group__checkbox-label .landing-page__responsive__right-side__utilities__switch-theme-group__ball {
     transform: translateY(26px);
 }
-
 /*#endregion  */
 
 /*#region Landing Page Responsive Mobile */
@@ -462,7 +456,7 @@ body {
 
 .landing-page__responsive__mobile__container {
     width: 100%;
-    height: 100%;
+    height: 99%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -471,12 +465,12 @@ body {
 
 .landing-page__responsive__mobile__banner {
     width: 100%;
-    background-image: url("../images/van-gogh-test.png");
+    background-image: url("../assets/images/van-gogh-test.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
-    height: 15%;
+    min-height: 13%;
     border-radius: var(--border-radius-2);
     border: 1px solid var(--dark-border-color);
     display: flex;
@@ -564,7 +558,7 @@ body {
 
 .landing-page__responsive__mobile__gallery {
     width: 100%;
-    height: 42%;
+    min-height: 42%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -579,14 +573,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3%;
     height: 90%;
     animation: landing-page-banner-right-side-bannermove 180s linear infinite;
 }
 
 .landing-page__responsive__mobile__service {
     width: 100%;
-    height: 36%;
+    height: 42%;
     border: 1px solid var(--dark-border-color);
     background-color: var(--dark-panel-color);
     border-radius: var(--border-radius-2);
@@ -595,10 +588,8 @@ body {
     flex-direction: column;
     gap: 6px;
     display: flex;
-    min-height: 300px;
 }
-
-/*endregion  */
+/*#endregion*/
 
 /*#region Top Info*/
 .top-info {
@@ -773,7 +764,7 @@ body {
     min-height: 300px;
     display: flex;
     overflow: hidden;
-    background-image: url("../images/van-gogh-test.png");
+    background-image: url("../assets/images/van-gogh-test.png");
     background-size: cover;
     background-clip: content-box;
     background-position: center;
@@ -855,7 +846,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 24px;
+    gap: 3px;
     height: 90%;
     width: 100%;
 }
@@ -957,9 +948,8 @@ body {
 
 .fa-sun {
     color: var(--secondary-color);
-    margin-left: 1px;
-    margin-top: 1px;
-    font-size: 14px;
+    font-size: 13px;
+    margin-right: 2px;
 }
 
 .landing-page-banner__right-side__utilities__switch-theme-group__checkbox:checked+.landing-page-banner__right-side__utilities__switch-theme-group__checkbox-label .landing-page-banner__right-side__utilities__switch-theme-group__ball {
