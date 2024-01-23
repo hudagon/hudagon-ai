@@ -27,6 +27,8 @@
     flex-direction: column;
 }
 
+
+/* UPPER */
 .list-page-wrapper__left-side__upper {
     border-radius: var(--border-radius-2);
     border: 1px solid var(--dark-border-color);
@@ -34,8 +36,8 @@
     height: var(--left-side-upper-height);
     background-color: var(--dark-panel-color);
     display: flex;
-    background: rgb(62,0,138);
-    background: radial-gradient(circle, rgba(62,0,138,1) 0%, rgba(197,179,88,1) 100%);
+    background: rgb(62, 0, 138);
+    background: radial-gradient(circle, rgba(62, 0, 138, 1) 0%, rgba(197, 179, 88, 1) 100%);
     animation: list-page-left-upper-glowing-background 90s linear infinite;
     overflow: hidden;
     background-size: 360%;
@@ -53,20 +55,33 @@
     padding: 4.5% 0;
     width: 98%;
     font-family: var(--font-primary);
-    background-color: var(--dark-panel-color);
+    background-image: url("../assets/images/van-gogh-test.png");
+    background-size: cover;
+    background-position: center;
     border: 1px solid transparent;
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.list-page-wrapper__left-side__upper__content__overlay {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background-color: #151515ad;
 }
 
 .list-page-wrapper__left-side__upper__content__title {
     font-size: var(--fs-larger-5);
     margin: 0 6px;
+    z-index: 2;
     font-family: var(--font-secondary);
 }
 
+/* LOWER */
 .list-page-wrapper__left-side__lower {
     border-radius: var(--border-radius-2);
     border: 1px solid var(--dark-border-color);
@@ -74,16 +89,71 @@
     height: var(--left-side-lower-height);
     background-color: var(--dark-panel-color);
     min-height: 450px;
-    padding: 4.5%;
+    padding: 3% 4.5%;
 }
 
 .list-page-wrapper__left-side__lower__header {
     width: 100%;
-    overflow-x: scroll;
+    max-height: 150px;
+    overflow: auto;
+    gap: 6px;
     display: flex;
-    flex-wrap: nowrap;
-    height: 8.1%;
-    border-bottom: 1px solid var(--dark-border-color);
+    flex-wrap: wrap;
+}
+
+.list-page-wrapper__left-side__lower__body__breadcrumb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: none;
+    justify-content: space-between;
+}
+
+.list-page-wrapper__left-side__lower__body__breadcrumb__text-group {
+    color: var(--secondary-color);
+    display: flex;
+    gap: 6px;
+    font-size: var(--fs-less-1);
+}
+
+.list-page-wrapper__left-side__lower__body__breadcrumb__text-group span {
+    color: var(--dark-text-color);
+}
+
+.list-page-wrapper__left-side__lower__body__breadcrumb i {
+    font-size: var(--fs-larger-1);
+}
+
+.list-page-wrapper__left-side__lower__body__menu-level-1-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 3%;
+}
+
+.list-page-wrapper__left-side__lower__body__menu-level-1-list__item {
+    width: 100%;
+    border: 1px solid var(--dark-border-color);
+    height: 81px;
+    display: flex;
+    overflow: hidden;
+}
+
+.list-page-wrapper__left-side__lower__body__menu-level-1-list__item__left-side {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-larger-1);
+}
+
+.list-page-wrapper__left-side__lower__body__menu-level-1-list__item__right-side {
+    width: 70%;
+    height: 100%;
+    background-color: red;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 /*#endregion*/
