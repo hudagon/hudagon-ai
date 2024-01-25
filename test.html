@@ -7,72 +7,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html,
-        body {
-            width: 100vw;
-            height: 100svh;
-            background-color: #141414;
-        }
-
-        .container {
-            overflow-x: hidden;
-            color: #dfdfdf;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .box {
-            position: relative;
-            height: 400px;
-            width: 380px;
-            display: block;
-            z-index: 4;
-            background: linear-gradient(0deg, black, #444444);
-        }
-
-        .glowing::before {
-            content: '';
-            position: absolute;
-            left: -2px;
-            top: -2px;
-            background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
-            background-size: 400%;
-            width: calc(100% + 5px);
-            height: calc(100% + 5px);
-            z-index: 3;
-            animation: glower 20s linear infinite;
-        }
-
-        @keyframes glower {
-            0% {
-                background-position: 0 0;
-            }
-
-            50% {
-                background-position: 400% 0;
-            }
-
-            100% {
-                background-position: 0 0;
-            }
-        }
-    </style>
-
 </head>
 
-<body>
-    <div class="container">
-        <div class="box glowing"></div>
-    </div>
+<body style="padding: 3em 0">
+    <section class="container max-width-sm">
+        <div class="text-component text-center">
+            <p>👈 <a href="https://codyhouse.co/gem/css-multi-level-accordion-menu" class="cd-article-link">Article &
+                    Download</a></p>
+            <h1>Multi-Level Accordion Menu</h1>
+        </div>
+
+        <ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+            <li class="cd-accordion__item cd-accordion__item--has-children">
+                <input class="cd-accordion__input" type="checkbox" name="group-1" id="group-1">
+                <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-1"><span>Group
+                        1</span></label>
+
+                <ul class="cd-accordion__sub cd-accordion__sub--l1">
+                    <li class="cd-accordion__item cd-accordion__item--has-children">
+                        <input class="cd-accordion__input" type="checkbox" name="sub-group-1" id="sub-group-1">
+                        <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-1"><span>Sub
+                                Group 1</span></label>
+
+                        <ul class="cd-accordion__sub cd-accordion__sub--l2">
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="cd-accordion__item cd-accordion__item--has-children">
+                        <input class="cd-accordion__input" type="checkbox" name="sub-group-2" id="sub-group-2">
+                        <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-2"><span>Sub
+                                Group 2</span></label>
+
+                        <ul class="cd-accordion__sub cd-accordion__sub--l2">
+                            <li class="cd-accordion__item cd-accordion__item--has-children">
+                                <input class="cd-accordion__input" type="checkbox" name="sub-group-level-3"
+                                    id="sub-group-level-3">
+                                <label class="cd-accordion__label cd-accordion__label--icon-folder"
+                                    for="sub-group-level-3"><span>Sub Group Level 3</span></label>
+
+                                <ul class="cd-accordion__sub cd-accordion__sub--l3">
+                                    <li class="cd-accordion__item"><a
+                                            class="cd-accordion__label cd-accordion__label--icon-img"
+                                            href="#0"><span>Image</span></a></li>
+                                    <li class="cd-accordion__item"><a
+                                            class="cd-accordion__label cd-accordion__label--icon-img"
+                                            href="#0"><span>Image</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                </ul>
+            </li>
+
+            <li class="cd-accordion__item cd-accordion__item--has-children">
+                <input class="cd-accordion__input" type="checkbox" name="group-2" id="group-2">
+                <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-2"><span>Group
+                        2</span></label>
+
+                <ul class="cd-accordion__sub cd-accordion__sub--l1">
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                </ul>
+            </li>
+
+            <li class="cd-accordion__item cd-accordion__item--has-children">
+                <input class="cd-accordion__input" type="checkbox" name="group-3" id="group-3">
+                <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-3"><span>Group
+                        3</span></label>
+
+                <ul class="cd-accordion__sub cd-accordion__sub--l1">
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                </ul>
+            </li>
+
+            <li class="cd-accordion__item cd-accordion__item--has-children">
+                <input class="cd-accordion__input" type="checkbox" name="group-4" id="group-4">
+                <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-4"><span>Group
+                        4</span></label>
+
+                <ul class="cd-accordion__sub cd-accordion__sub--l1">
+                    <li class="cd-accordion__item cd-accordion__item--has-children">
+                        <input class="cd-accordion__input" type="checkbox" name="sub-group-3" id="sub-group-3">
+                        <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-3"><span>Sub
+                                Group 3</span></label>
+
+                        <ul class="cd-accordion__sub cd-accordion__sub--l2">
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                            <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                                    href="#0"><span>Image</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                    <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img"
+                            href="#0"><span>Image</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

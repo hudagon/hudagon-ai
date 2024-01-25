@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600&display=swap');
 
+body {
+    font-family: var(--font-primary);
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+    font-size: var(--fs-normal);
+    font-weight: 300;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
 /*#region BASE*/
 ::-webkit-scrollbar {
     width: 3px;
@@ -64,6 +75,11 @@
 
     --dark-text-color: #dfdfdf;
     --light-text-color: #dfdfdf;
+
+    /* Painting filter Menu color */
+    --level1-color: rgba(59, 59, 59, 0.63);
+    --level2-color: rgba(36, 36, 36, 0.63);
+    --level3-color: rgba(10, 10, 10, 0.63);
 
     /* Overlay color */
     --overlay-color: rgba(0, 0, 0, 0.72);
@@ -195,7 +211,41 @@
     padding: 0 21px;
     column-gap: 9px;
     max-width: 48%;
+    position: relative;
+    overflow: hidden;
 }
+
+.painting-tag.left-side-filter {
+    min-width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.painting-tag__overlay {
+    position: absolute;
+    background-color: #303030a1;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 18px;
+    transition: 0.24s ease-in-out;
+    opacity: 0;
+}
+
+.painting-tag.left-side-filter:hover .painting-tag__overlay {
+    opacity: 1;
+}
+
+.painting-tag__overlay i {
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a0a;
+}
+
 
 .painting-tag i {
     font-size: 12px;
@@ -299,18 +349,24 @@
     }
 }
 
-.hover-effect-1,
+.hover-effect-yellow-bright,
 .hover-effect-2,
 .hover-effect-painting-tag,
 .hover-effect-button-1,
-.hover-effect-menu-1 {
+.hover-effect-menu-1,
+.hover-effect-silver-border {
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.hover-effect-1:hover {
+.hover-effect-yellow-bright:hover {
     color: var(--secondary-color);
     filter: brightness(1.2);
+}
+
+.hover-effect-silver-border:hover {
+    border-color: var(--light-border-color) !important;
+    filter: brightness(1.10);
 }
 
 .hover-effect-2:hover {
@@ -331,9 +387,9 @@
 }
 
 .hover-effect-painting-tag:hover {
-    box-shadow: 1px 1px 14px -6px var(--dark-scrollbar-thumb);
     -webkit-box-shadow: 1px 1px 14px -6px var(--dark-scrollbar-thumb);
     -moz-box-shadow: 1px 1px 14px -6px var(--dark-scrollbar-thumb);
+    box-shadow: 1px 1px 14px -6px var(--dark-scrollbar-thumb);
     color: var(--secondary-color);
     scale: 1.005;
 }
@@ -341,7 +397,6 @@
 /*#endregion*/
 
 /*#region MEDIA QUERIES*/
-
 /* Height responsive */
 @media (min-height: 1365px) and (max-width: 1025px) {
     .border-container {
@@ -354,10 +409,6 @@
     .btn.md {
         padding: 9px 18px;
         width: 150px;
-    }
-
-    :root {
-        --fs-normal: 21px;
     }
 }
 
@@ -506,13 +557,3 @@
 
 /*#endregion*/
 
-body {
-    font-family: var(--font-primary);
-    background-color: var(--dark-background-color);
-    color: var(--dark-text-color);
-    font-size: var(--fs-normal);
-    font-weight: 300;
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
-}
