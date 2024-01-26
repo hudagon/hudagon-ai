@@ -31,7 +31,8 @@
       "default",
       {
         "ignore": [
-          "scale"
+          "scale",
+          "backdrop-filter"
         ]
       }
     ],
@@ -40,6 +41,13 @@
       {
         "duplicate-id": "off"
       }
-    ]
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "disown-opener": "off"
   }
 }

@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-primary);
     background-color: var(--dark-background-color);
@@ -65,6 +69,7 @@ body {
 
     --dark-border-color: #282b28;
     --light-border-color: #8f8f8f61;
+    --dark-level2-border-color: #393b39;
 
     --dark-glass-blur: hsla(0, 0%, 7%, 0.695);
 
@@ -77,12 +82,15 @@ body {
     --light-text-color: #dfdfdf;
 
     /* Painting filter Menu color */
-    --level1-color: rgba(59, 59, 59, 0.63);
-    --level2-color: rgba(36, 36, 36, 0.63);
-    --level3-color: rgba(10, 10, 10, 0.63);
+    --level1-color: rgba(51, 51, 51, 0.61);
+    --level2-color: rgba(24, 24, 24, 0.822);
+    --level3-color: rgba(15, 15, 15, 0.849);
 
     /* Overlay color */
     --overlay-color: rgba(0, 0, 0, 0.72);
+
+    /* Form Color */
+    --checkbox-border-color: #505050;
 
     /* font-family */
     --font-primary: 'Anuphan', sans-serif;
@@ -201,6 +209,52 @@ body {
 
 /*#endregion*/
 
+/*#region Checkboxes*/
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+
+    font: inherit;
+    color: var(--checkbox-border-color);
+    width: 1em;
+    min-width: 18px;
+    height: 1em;
+    border: 1px solid var(--checkbox-border-color);
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--secondary-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+    outline-offset: max(2px, 0.15em);
+}
+
+input[type="checkbox"]:disabled {
+    color: var(--dark-scrollbar-thumb);
+    cursor: not-allowed;
+}
+/*#endregion*/
+
 /*#region Painting Tag*/
 .painting-tag {
     display: flex;
@@ -215,8 +269,8 @@ body {
     overflow: hidden;
 }
 
-.painting-tag.left-side-filter {
-    min-width: 48%;
+.painting-tag.filter {
+    min-width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,7 +288,7 @@ body {
     opacity: 0;
 }
 
-.painting-tag.left-side-filter:hover .painting-tag__overlay {
+.painting-tag.filter:hover .painting-tag__overlay {
     opacity: 1;
 }
 
@@ -249,7 +303,6 @@ body {
 
 .painting-tag i {
     font-size: 12px;
-    margin-top: 2.4px;
 }
 
 .painting-tag__content {
@@ -339,7 +392,7 @@ body {
 
 @keyframes responsive-tablet-content-slide-up-down {
     0% {
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-100%);
     }
 
@@ -556,4 +609,3 @@ body {
 }
 
 /*#endregion*/
-
