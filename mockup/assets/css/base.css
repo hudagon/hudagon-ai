@@ -182,7 +182,7 @@ body {
 
 /*#region BUTTON*/
 .btn {
-    border-radius: 18px;
+    border-radius: 21px;
     color: var(--text-color);
     line-height: 1.2;
     white-space: nowrap;
@@ -190,8 +190,9 @@ body {
 }
 
 .btn.sm {
-    padding: 9px 18px;
+    padding: 12px 18px;
     width: 120px;
+    font-size: var(--fs-less-1);
 }
 
 .btn.md {
@@ -207,6 +208,10 @@ body {
 
 .btn.sc {}
 
+
+.btn.outline {
+    border: 1px solid var(--dark-border-color);
+}
 /*#endregion*/
 
 /*#region Checkboxes*/
@@ -215,11 +220,11 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     /* Remove most all native input styles */
     appearance: none;
-
+    cursor: pointer;
     font: inherit;
     color: var(--checkbox-border-color);
     width: 1em;
-    min-width: 18px;
+    /* min-width: 18px; */
     height: 1em;
     border: 1px solid var(--checkbox-border-color);
     transform: translateY(-0.075em);
@@ -259,6 +264,7 @@ input[type="checkbox"]:disabled {
 .painting-tag {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid var(--dark-border-color);
     border-radius: 30px;
     height: 45px;
@@ -267,6 +273,11 @@ input[type="checkbox"]:disabled {
     max-width: 48%;
     position: relative;
     overflow: hidden;
+}
+
+.painting-tag input {
+    scale: 0.9;
+    margin-top: 1.2px;
 }
 
 .painting-tag.filter {
@@ -407,9 +418,15 @@ input[type="checkbox"]:disabled {
 .hover-effect-painting-tag,
 .hover-effect-button-1,
 .hover-effect-menu-1,
-.hover-effect-silver-border {
+.hover-effect-silver-border,
+.hover-effect-brighter-opaquer {
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.hover-effect-brighter-opaquer:hover {
+    background-color: rgba(0, 0, 0, 0.349);;
+    filter: brightness(1.2);
 }
 
 .hover-effect-yellow-bright:hover {
@@ -418,8 +435,8 @@ input[type="checkbox"]:disabled {
 }
 
 .hover-effect-silver-border:hover {
-    border-color: var(--light-border-color) !important;
-    filter: brightness(1.10);
+    border-color: var(--light-border-color);
+    filter: brightness(1.152);
 }
 
 .hover-effect-2:hover {
@@ -446,7 +463,6 @@ input[type="checkbox"]:disabled {
     color: var(--secondary-color);
     scale: 1.005;
 }
-
 /*#endregion*/
 
 /*#region MEDIA QUERIES*/
