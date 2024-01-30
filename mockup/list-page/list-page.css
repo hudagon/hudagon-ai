@@ -317,13 +317,14 @@
     background-color: var(--level3-color);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-out;
 }
 
 .list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--dark-level2-border-color);
+    border-bottom: none;
     border-top: none;
     display: flex;
     flex-wrap: wrap;
@@ -369,11 +370,16 @@
 
 /* Style Body */
 .list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper.style-panel {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     gap: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper.style-panel.level3 {
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
 }
 
 .list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group {
@@ -381,6 +387,10 @@
     height: 81px;
     position: relative;
     cursor: pointer;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group:last-child {
+    border-bottom: 1px solid var(--dark-level2-border-color);
 }
 
 .list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group +
@@ -431,5 +441,113 @@
 
 .list-page-wrapper__right-side__content__filter-bar__body__panel__style-define__text {
     flex: 1;
+}
+
+
+/* Color Body */
+.list-page-wrapper__right-side__content__filter-bar__body__color-body {
+    width: 100%;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__upper {
+    width: 100%;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__upper__wrapper {
+    height: inherit;
+    display: flex;    
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__upper__color-group {
+    width: 30%;
+    position: relative;
+    aspect-ratio: 1/1;
+    z-index: 1;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__upper__color-group__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #0000001e;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__upper__color-group__overlay span {
+    z-index: 3;
+    opacity: 0;
+    font-size: var(--fs-less-1);
+    transition: 0.24s ease-in-out;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__upper__color-group__overlay:hover > * {
+    opacity: 1;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__upper__color-group input {
+    position: absolute;
+    background-color: var(--dark-background-color);
+    top: 6px;
+    left: 6px;
+    z-index: 3;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__lower {
+    border-top: 1px solid var(--secondary-color);
+    margin-top: 12px;
+    padding-top: 12px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__lower__color-group {
+    flex: 1;
+    position: relative;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__lower__color-group input {
+    position: absolute;
+    background-color: var(--dark-background-color);
+    top: 6px;
+    left: 6px;
+    z-index: 3;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__lower__color-group__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__lower__color-group__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000067;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__lower__color-group__overlay span {
+    z-index: 3;
+    opacity: 0;
+    font-size: var(--fs-less-1);
+    transition: 0.24s ease-in-out;
+}
+
+.list-page-wrapper__right-side__content__filter-bar__body__color-body__lower__color-group__overlay:hover > * {
+    opacity: 1;
 }
 /*#endregion*/

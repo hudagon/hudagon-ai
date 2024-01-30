@@ -428,7 +428,7 @@ input[type="checkbox"]:disabled {
 }
 
 .hover-effect-brighter-opaquer:hover {
-    background-color: rgba(0, 0, 0, 0.349);;
+    background-color: rgba(0, 0, 0, 0.349);
     filter: brightness(1.2);
 }
 
