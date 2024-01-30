@@ -47,12 +47,12 @@
                         <i class="fa-solid fa-xmark"></i>
                         <span class="painting-tag__content">Nhân vật, sự kiện, lịch sử</span>
                     </div>
-                    <div class="hover-effect-2 painting-tag">
-                        <i class="fa-solid fa-xmark"></i>
-                        <span class="painting-tag__content">Nhân vật, sự kiện, lịch sử</span>
-                    </div>
-
                 </header>
+
+                <div class="list-page-wrapper__left-side__lower__button-group">
+                    <button class="hover-effect-yellow-bright btn pr sm">Áp dụng</button>
+                    <button class="hover-effect-yellow-bright btn outline sm">Đặt lại</button>
+                </div>
 
                 <div class="list-page-wrapper__left-side__lower__body">
                     <ul class="list-page-wrapper__left-side__lower__body__level-1-menu">
@@ -66,7 +66,7 @@
                         <li onclick="toggleFilterBar(this)"
                             class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
                             <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
-                                Kích thước
+                                Tỉ lệ khung hình
                             </span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </li>
@@ -80,7 +80,7 @@
                         <li onclick="toggleFilterBar(this)"
                             class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
                             <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
-                                Màu
+                                Màu sắc
                             </span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </li>
@@ -98,7 +98,7 @@
 
         <div class="list-page-wrapper__right-side">
             <div class="list-page-wrapper__right-side__content">
-                <div id="rightSideFilterBar" class="list-page-wrapper__right-side__content__filter-bar">
+                <div id="rightSideFilterBar" class="activated list-page-wrapper__right-side__content__filter-bar">
                     <div class="list-page-wrapper__right-side__content__filter-bar__header">
                         <span class="list-page-wrapper__right-side__content__filter-bar__header__title">
                             Chủ thể
@@ -106,182 +106,413 @@
                         <i class="hover-effect-yellow-bright fa-solid fa-xmark"></i>
                     </div>
                     <div class="list-page-wrapper__right-side__content__filter-bar__body">
+                        <!-- Subject Body -->
                         <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion-group">
-                            <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion">
+                            <div
+                                class="hover-effect-yellow-bright list-page-wrapper__right-side__content__filter-bar__body__accordion">
                                 <input type="checkbox">
-                                <span class="hover-effect-yellow-bright">Con người</span>
-                                <i class="hover-effect-yellow-bright list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body fa-solid fa-chevron-down"></i>
+                                Con người
+                                <i
+                                    class="list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body fa-solid fa-chevron-down"></i>
                             </div>
                             <div class="list-page-wrapper__right-side__content__filter-bar__body__panel">
                                 <div class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper">
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
+                                    <div class="hover-effect-yellow-bright painting-tag filter">
+                                        <input type="checkbox">
                                         <span class="painting-tag__content">Cá nhân</span>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
+                                    <div class="hover-effect-yellow-bright painting-tag filter">
+                                        <input type="checkbox">
                                         <span class="painting-tag__content">Cặp đôi</span>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
+                                    <div class="hover-effect-yellow-bright painting-tag filter">
+                                        <input type="checkbox">
                                         <span class="painting-tag__content">Châu Phi</span>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
+                                    <div class="hover-effect-yellow-bright painting-tag filter">
+                                        <input type="checkbox">
                                         <span class="painting-tag__content">Châu Âu</span>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
+                                    <div class="hover-effect-yellow-bright painting-tag filter">
+                                        <input type="checkbox">
                                         <span class="painting-tag__content">Châu Á</span>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
+                                    <div class="hover-effect-yellow-bright painting-tag filter">
+                                        <input type="checkbox">
                                         <span class="painting-tag__content">Tuổi đôi mươi</span>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
+                                    <div class="hover-effect-yellow-bright painting-tag filter">
+                                        <input type="checkbox">
                                         <span class="painting-tag__content">Trưởng thành</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Aspect Ratio Body -->
+                        <!-- <div class="list-page-wrapper__right-side__content__filter-bar__body__aspect-ratio-body">
+                            <div class="row no-gutters" style="height: inherit">
+                                <div class="col c-4">
+                                    <div class="list-page-wrapper__right-side__content__filter-bar__body__aspect-ratio-body__portrait-group">
+                                        <p class="hover-effect-silver-border list-page-wrapper__right-side__content__filter-bar__body__aspect-ratio-body__portrait-group__content ar-11">
+                                            <input type="checkbox">
+                                            1:1
+                                        </p>
+                                        <p class="hover-effect-silver-border list-page-wrapper__right-side__content__filter-bar__body__aspect-ratio-body__portrait-group__content ar-34">
+                                            <input type="checkbox">
+                                            3:4
+                                        </p>
+                                        <p class="hover-effect-silver-border list-page-wrapper__right-side__content__filter-bar__body__aspect-ratio-body__portrait-group__content ar-916">
+                                            <input type="checkbox">
+                                            9:16
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col c-8">
+                                    <div class="list-page-wrapper__right-side__content__filter-bar__body__aspect-ratio-body__landspace-group">
+                                        <p class="hover-effect-silver-border list-page-wrapper__right-side__content__filter-bar__body__aspect-ratio-body__landspace-group__content ar-169">
+                                            <input type="checkbox">
+                                            16:9
+                                        </p>
+                                        <p class="hover-effect-silver-border list-page-wrapper__right-side__content__filter-bar__body__aspect-ratio-body__landspace-group__content ar-43">
+                                            <input type="checkbox">
+                                            4:3
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- Style Body -->
                         <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion-group">
-                            <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion">
+                            <div
+                                class="hover-effect-yellow-bright list-page-wrapper__right-side__content__filter-bar__body__accordion">
                                 <input type="checkbox">
-                                Phong cảnh
-                                <i class="hover-effect-yellow-bright list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body fa-solid fa-chevron-down"></i>
+                                Nhiếp ảnh
+                                <i
+                                    class="list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body fa-solid fa-chevron-down"></i>
                             </div>
                             <div class="list-page-wrapper__right-side__content__filter-bar__body__panel">
-                                <div class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper">
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Cá nhân</span>
+                                <div
+                                    class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper style-panel">
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/doi_thuong.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Đời thường
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Cặp đôi</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/chan_dung.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Chân dung
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Châu Phi</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/phong_canh_style.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Phong cảnh
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Châu Âu</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/can_canh.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Cận cảnh
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Châu Á</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/truu_tuong.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Trừu tượng
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Tuổi đôi mươi</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/kien_truc.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Kiến trúc
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Trưởng thành</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/thien_van.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Thiên văn
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/hanh_dong.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Hành động
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/tinh_vat.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Tĩnh vật
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <p
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Khác...
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion-group">
-                            <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion">
+                            <div
+                                class="hover-effect-yellow-bright list-page-wrapper__right-side__content__filter-bar__body__accordion">
                                 <input type="checkbox">
-                                Động vật
-                                <i class="hover-effect-yellow-bright list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body fa-solid fa-chevron-down"></i>
+                                Hội họa
+                                <i
+                                    class="list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body fa-solid fa-chevron-down"></i>
                             </div>
                             <div class="list-page-wrapper__right-side__content__filter-bar__body__panel">
-                                <div class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper">
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Cá nhân</span>
+                                <div onclick="toggleStyleLevel3(this)"
+                                    class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define">
+                                    <span
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define__slash"></span>
+                                    <span
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define__text">Theo
+                                        chất liệu</span>
+                                    <span
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define__slash"></span>
+                                </div>
+                                <div class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper style-panel">
+                                    <div class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/lua.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Lụa
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Cặp đôi</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/son_dau.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Sơn dầu
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Châu Phi</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/son_mai.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Sơn mài
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Châu Âu</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/xep_giay.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Xếp giấy
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Châu Á</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/kham_mau.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Khảm màu
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Tuổi đôi mươi</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/thuy_mac.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Mực Trung Quốc
+                                        </p>
                                     </div>
-                                    <div class="painting-tag filter">
-                                        <div class="painting-tag__overlay">
-                                            <i class="hover-effect-yellow-bright fa-solid fa-plus"></i>
-                                            <i class="hover-effect-yellow-bright fa-regular fa-eye"></i>
-                                        </div>
-                                        <span class="painting-tag__content">Trưởng thành</span>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/chi.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Chì
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <p
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Khác...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define">
+                                    <span
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define__slash"></span>
+                                    <span
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define__text">Theo
+                                        trường phái</span>
+                                    <span
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define__slash"></span>
+                                </div>
+                                <div
+                                    class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper style-panel">
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/phuc_hung.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Phục hưng
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/tan_co_dien.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Tân cổ điển
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/an_tuong.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Ấn tượng
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/hau_an_tuong.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Hậu ấn tượng
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/da_thu.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Dã thú
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/lang_man.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Lãng mạn
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/hien_thuc.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Hiện thực
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/bieu_hien.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Biểu hiện
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/lap_the.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Lập thể
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <img src="../assets/images/sieu_thuc.png" alt=""
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__image">
+                                        <p
+                                            class="hover-effect-brighter-opaquer list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Siêu thực
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
+                                        <input type="checkbox">
+                                        <p
+                                            class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group__overlay">
+                                            Khác...
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -290,24 +521,32 @@
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 <script>
     const rightSideFilterBar = document.getElementById("rightSideFilterBar");
-
     function toggleFilterBar(element) {
         rightSideFilterBar.classList.toggle("activated");
         element.classList.toggle("activated");
         element.children[1].classList.toggle("activated");
     }
 
-    var dropDownButtonLevel2 = document.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body");
+    function toggleStyleLevel3(element) {
+        let panel = element.nextElementSibling;
+        console.log(panel);
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    }
+
+    var dropDownButtonLevel2 = document.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__accordion");
     for (let i = 0; i < dropDownButtonLevel2.length; i++) {
         dropDownButtonLevel2[i].addEventListener("click", function () {
+            this.children[1].classList.toggle("activated");
             this.classList.toggle("activated");
-            this.parentNode.classList.toggle("activated");
-            let panel = this.parentNode.nextElementSibling;
+            let panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
             } else {
