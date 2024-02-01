@@ -81,7 +81,8 @@
                     </div>
 
                     <div class="list-page-wrapper__left-side__lower__footer">
-                        <span class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__footer__text">Liên hệ</span>
+                        <span class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__footer__text">Liên
+                            hệ</span>
                         <i class="fa-solid fa-diamond"></i>
                         <span class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__footer__text">Điều
                             khoản</span>
@@ -93,19 +94,37 @@
 
                 <div class="list-page-wrapper__left-side__lower__repsonsive-tablet">
                     <ul class="list-page-wrapper__left-side__lower__repsonsive-tablet__list">
-                        <li onclick="toggleRightSideFilterBarTablet(this)"
+                        <li onclick="toggleFilterBar(this)"
                             class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__list__item">
-                            <i class="fa-solid fa-filter"></i>
+                            <i class="fa-solid fa-icons"></i>
+                            Chủ thể
                         </li>
-                        <li onclick="toggleRightSideFilterBarTablet(this)"
+                        <li onclick="toggleFilterBar(this)"
                             class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__list__item">
-                            <i class="fa-regular fa-newspaper"></i>
+                            <i class="fa-solid fa-expand"></i>
+                            Kích thước
                         </li>
-                        <li onclick="toggleRightSideFilterBarTablet(this)"
+                        <li onclick="toggleFilterBar(this)"
                             class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__list__item">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <i class="fa-solid fa-paintbrush"></i>
+                            Phong cách
+                        </li>
+                        <li onclick="toggleFilterBar(this)"
+                            class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__list__item">
+                            <i class="fa-solid fa-palette"></i>
+                            Màu
+                        </li>
+                        <li onclick="toggleFilterBar(this)"
+                            class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__list__item">
+                            <i class="fa-regular fa-image"></i>
+                            Chủ đề
                         </li>
                     </ul>
+
+                    <div onclick="toggleInfoAndQuestion(this)" class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__info">
+                        <i class="fa-solid fa-info"></i>
+                        <i class="fa-solid fa-question"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,7 +134,7 @@
                 <div id="rightSideFilterBarTablet" class="list-page-wrapper__right-side__content__filter-bar-tablet">
                     <div class="list-page-wrapper__right-side__content__filter-bar-tablet__header">
                         <span class="list-page-wrapper__right-side__content__filter-bar-tablet__header__title">
-                            Bộ lọc
+                            Chủ thể
                         </span>
                         <i class="hover-effect-yellow-bright fa-solid fa-xmark"></i>
                     </div>
@@ -212,9 +231,9 @@
                                 </div>
                             </div>
                         </div> -->
-                        
+
                         <!-- Style Body -->
-                        <!-- <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion-group">
+                        <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion-group">
                             <div
                                 class="hover-effect-yellow-bright list-page-wrapper__right-side__content__filter-bar__body__accordion">
                                 <input type="checkbox">
@@ -799,10 +818,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
 
                         <!-- Color Body -->
-                        <div class="list-page-wrapper__right-side__content__filter-bar__body__color-body">
+                        <!-- <div class="list-page-wrapper__right-side__content__filter-bar__body__color-body">
                             <div class="list-page-wrapper__right-side__content__filter-bar__body__color-body__upper">
                                 <div class="row no-gutters list-page-wrapper__right-side__content__filter-bar__body__color-body__upper__wrapper">
                                     <div style="background-color: #e32636;" class="list-page-wrapper__right-side__content__filter-bar__body__color-body__upper__color-group">
@@ -912,7 +931,7 @@
                                     <input type="checkbox">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Topic body -->
                         <!-- <div class="list-page-wrapper__right-side__content__filter-bar__body__accordion-group">
@@ -1042,6 +1061,20 @@
                     </div>
                 </div>
 
+                <div id="rightSideInfoAndQuestion" class="list-page-wrapper__right-side__content__info-and-question-bar">
+                    <ul class="list-page-wrapper__right-side__content__info-and-question-bar__list">
+                        <li class="hover-effect-yellow-bright list-page-wrapper__right-side__content__info-and-question-bar__list__item">
+                            <i class="fa-solid fa-file-contract"></i> Chính sách
+                        </li>
+                        <li class="hover-effect-yellow-bright list-page-wrapper__right-side__content__info-and-question-bar__list__item">
+                            <i class="fa-solid fa-spell-check"></i> Điều khoản
+                        </li>
+                        <li class="hover-effect-yellow-bright list-page-wrapper__right-side__content__info-and-question-bar__list__item">
+                            <i class="fa-solid fa-address-book"></i> Liên hệ
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="list-page-wrapper__right-side__content__header">
                     <div class="list-page-wrapper__right-side__content__header__search-group">
                         <input tabindex="1" type="text"
@@ -1151,17 +1184,20 @@
                                     123456
                                 </span> Kết quả cho
                             </p>
-                            <li class="hover-effect-2 list-page-wrapper__right-side__content__body__upper__tag-group__item painting-tag">
+                            <li
+                                class="hover-effect-2 list-page-wrapper__right-side__content__body__upper__tag-group__item painting-tag">
                                 <i class="fa-solid fa-xmark"></i>
                                 Con người
                             </li>
-                            <li class="hover-effect-2 list-page-wrapper__right-side__content__body__upper__tag-group__item painting-tag">
+                            <li
+                                class="hover-effect-2 list-page-wrapper__right-side__content__body__upper__tag-group__item painting-tag">
                                 <i class="fa-solid fa-xmark"></i>
                                 "Con mèo mà trèo cây cau"
                             </li>
                             <li class="list-page-wrapper__right-side__content__body__upper__tag-group__item">
-                                <button class="hover-effect-yellow-bright btn list-page-wrapper__right-side__content__body__upper__tag-group__item__button">
-                                    <i class="fa-solid fa-rotate"></i> Đặt lại 
+                                <button
+                                    class="hover-effect-yellow-bright btn list-page-wrapper__right-side__content__body__upper__tag-group__item__button">
+                                    <i class="fa-solid fa-rotate"></i> Đặt lại
                                 </button>
                             </li>
                         </ul>
@@ -1463,7 +1499,8 @@
                             </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/11_test3.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/11_test_3.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
                             <img src="../assets/images/an_tuong.png" alt=""
@@ -1756,6 +1793,11 @@
         rightSideFilterBar.classList.toggle("activated");
         element.classList.toggle("activated");
         element.children[1].classList.toggle("activated");
+    }
+
+    const rightSideInfoAndQuestion = document.getElementById("rightSideInfoAndQuestion");
+    function toggleInfoAndQuestion(element) {
+        rightSideInfoAndQuestion.classList.toggle("activated");
     }
 
     function toggleStyleLevel3(element) {
