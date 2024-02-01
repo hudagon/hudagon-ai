@@ -11,9 +11,9 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/grid-system.css">
     <link rel="stylesheet" href="list-page.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
 </head>
 
 <body>
@@ -22,90 +22,105 @@
             <div class="list-page-wrapper__left-side__upper">
                 <div class="list-page-wrapper__left-side__upper__content">
                     <div class="list-page-wrapper__left-side__upper__content__overlay"></div>
-                    <h1 class="hover-effect-yellow-bright list-page-wrapper__left-side__upper__content__title">Hudagon
-                        AI</h1>
+                    <h1 class="hover-effect-yellow-bright list-page-wrapper__left-side__upper__content__title">
+                        <a href="../landing-page/landing-page.html"
+                            class="nothing list-page-wrapper__left-side__upper__content__title__responsive-screen">Hudagon
+                            AI</a>
+
+                        <a href="../landing-page/landing-page.html"
+                            class="nothing list-page-wrapper__left-side__upper__content__title__responsive-tablet">H</a>
+                    </h1>
                 </div>
             </div>
             <div class="list-page-wrapper__left-side__lower">
-                <ul class="list-page-wrapper__left-side__lower__menu">
-                    <li class="hover-effect-yellow-bright activated list-page-wrapper__left-side__lower__menu__item">Bộ
-                        lọc</li>
-                    <li class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__menu__item">Xu hướng</li>
-                    <li class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__menu__item">Mới đăng</li>
-                </ul>
-
-                <header class="list-page-wrapper__left-side__lower__header">
-                    <div class="hover-effect-2 painting-tag">
-                        <i class="fa-solid fa-xmark"></i>
-                        <span class="painting-tag__content">Con người</span>
-                    </div>
-                    <div class="hover-effect-2 painting-tag">
-                        <i class="fa-solid fa-xmark"></i>
-                        <span class="painting-tag__content">Nhân vật, sự kiện, lịch sử</span>
-                    </div>
-                    <div class="hover-effect-2 painting-tag">
-                        <i class="fa-solid fa-xmark"></i>
-                        <span class="painting-tag__content">Nhân vật, sự kiện, lịch sử</span>
-                    </div>
-                </header>
-
-                <div class="list-page-wrapper__left-side__lower__button-group">
-                    <button class="hover-effect-yellow-bright btn pr sm">Áp dụng</button>
-                    <button class="hover-effect-yellow-bright btn outline sm">Đặt lại</button>
-                </div>
-
-                <div class="list-page-wrapper__left-side__lower__body">
-                    <ul class="list-page-wrapper__left-side__lower__body__level-1-menu">
-                        <li onclick="toggleFilterBar(this)"
-                            class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
-                            <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
-                                Chủ thể
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </li>
-                        <li onclick="toggleFilterBar(this)"
-                            class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
-                            <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
-                                Tỉ lệ khung hình
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </li>
-                        <li onclick="toggleFilterBar(this)"
-                            class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
-                            <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
-                                Phong cách
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </li>
-                        <li onclick="toggleFilterBar(this)"
-                            class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
-                            <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
-                                Màu sắc
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </li>
-                        <li onclick="toggleFilterBar(this)"
-                            class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
-                            <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
-                                Chủ đề
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
+                <div class="list-page-wrapper__left-side__lower__responsive-screen">
+                    <ul class="list-page-wrapper__left-side__lower__menu">
+                        <li class="list-page-wrapper__left-side__lower__menu__item">
+                            Bộ lọc
                         </li>
                     </ul>
+
+                    <div class="list-page-wrapper__left-side__lower__body">
+                        <ul class="list-page-wrapper__left-side__lower__body__level-1-menu">
+                            <li onclick="toggleFilterBar(this)"
+                                class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
+                                <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
+                                    Chủ thể
+                                </span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li onclick="toggleFilterBar(this)"
+                                class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
+                                <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
+                                    Tỉ lệ khung hình
+                                </span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li onclick="toggleFilterBar(this)"
+                                class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
+                                <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
+                                    Phong cách
+                                </span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li onclick="toggleFilterBar(this)"
+                                class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
+                                <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
+                                    Màu sắc
+                                </span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li onclick="toggleFilterBar(this)"
+                                class="hover-effect-silver-border list-page-wrapper__left-side__lower__body__level-1-menu__item">
+                                <span class="list-page-wrapper__left-side__lower__body__level-1-menu__item__title">
+                                    Chủ đề
+                                </span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="list-page-wrapper__left-side__lower__footer">
+                        <span class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__footer__text">Liên hệ</span>
+                        <i class="fa-solid fa-diamond"></i>
+                        <span class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__footer__text">Điều
+                            khoản</span>
+                        <i class="fa-solid fa-diamond"></i>
+                        <span class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__footer__text">Chính
+                            sách</span>
+                    </div>
                 </div>
 
-                <div class="list-page-wrapper__left-side__lower__footer">
-                    <span class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__footer__text">Điều
-                        khoản</span>
-                    <i class="fa-solid fa-diamond"></i>
-                    <span class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__footer__text">Chính
-                        sách</span>
+                <div class="list-page-wrapper__left-side__lower__repsonsive-tablet">
+                    <ul class="list-page-wrapper__left-side__lower__repsonsive-tablet__list">
+                        <li onclick="toggleRightSideFilterBarTablet(this)"
+                            class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__list__item">
+                            <i class="fa-solid fa-filter"></i>
+                        </li>
+                        <li onclick="toggleRightSideFilterBarTablet(this)"
+                            class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__list__item">
+                            <i class="fa-regular fa-newspaper"></i>
+                        </li>
+                        <li onclick="toggleRightSideFilterBarTablet(this)"
+                            class="hover-effect-yellow-bright list-page-wrapper__left-side__lower__repsonsive-tablet__list__item">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
         <div class="list-page-wrapper__right-side">
             <div class="list-page-wrapper__right-side__content">
+                <div id="rightSideFilterBarTablet" class="list-page-wrapper__right-side__content__filter-bar-tablet">
+                    <div class="list-page-wrapper__right-side__content__filter-bar-tablet__header">
+                        <span class="list-page-wrapper__right-side__content__filter-bar-tablet__header__title">
+                            Bộ lọc
+                        </span>
+                        <i class="hover-effect-yellow-bright fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
                 <div id="rightSideFilterBar" class="list-page-wrapper__right-side__content__filter-bar">
                     <div class="list-page-wrapper__right-side__content__filter-bar__header">
                         <span class="list-page-wrapper__right-side__content__filter-bar__header__title">
@@ -1031,6 +1046,7 @@
                     <div class="list-page-wrapper__right-side__content__header__search-group">
                         <input tabindex="1" type="text"
                             class="round list-page-wrapper__right-side__content__header__search-group__search-bar">
+                        <i class="hover-effect-yellow-bright fa-solid fa-xmark"></i>
                         <i tabindex="2" class="hover-effect-yellow-bright fa-solid fa-magnifying-glass"></i>
                     </div>
 
@@ -1046,7 +1062,8 @@
                                 class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down">
                                 <ul
                                     class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list">
-                                    <li class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list__item">
+                                    <li
+                                        class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list__item">
                                         <img src="../assets/images/test-cat.jpg"
                                             class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list__item__image" />
                                         <div
@@ -1057,7 +1074,7 @@
                                             </p>
                                             <a href=""
                                                 class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list__item__info__view-detail">
-                                                Xem chi tiết
+                                                Mua chi tiết
                                             </a>
                                         </div>
                                     </li>
@@ -1073,7 +1090,7 @@
                                             </p>
                                             <a href=""
                                                 class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list__item__info__view-detail">
-                                                Xem chi tiết
+                                                Mua chi tiết
                                             </a>
                                         </div>
                                     </li>
@@ -1089,7 +1106,7 @@
                                             </p>
                                             <a href=""
                                                 class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list__item__info__view-detail">
-                                                Xem chi tiết
+                                                Mua chi tiết
                                             </a>
                                         </div>
                                     </li>
@@ -1105,7 +1122,7 @@
                                             </p>
                                             <a href=""
                                                 class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list__item__info__view-detail">
-                                                Xem chi tiết
+                                                Mua chi tiết
                                             </a>
                                         </div>
                                     </li>
@@ -1128,103 +1145,598 @@
 
                 <div class="list-page-wrapper__right-side__content__body">
                     <div class="list-page-wrapper__right-side__content__body__upper">
-                        <p class="list-page-wrapper__right-side__content__body__upper__results">
-                            Hiển thị 123456 kết quả
-                        </p>
-
-                        <p class="list-page-wrapper__right-side__content__body__upper__hint">
-                            Không tìm thấy tác phẩm mong muốn?
-                            <span class="list-page-wrapper__right-side__content__body__upper__hint__contact-us">
-                                Liên hệ
-                            </span>
-                            ngay với chúng tôi
-                        </p>
+                        <ul class="list-page-wrapper__right-side__content__body__upper__tag-group">
+                            <p class="list-page-wrapper__right-side__content__body__upper__results">
+                                <span class="list-page-wrapper__right-side__content__body__upper__results__number">
+                                    123456
+                                </span> Kết quả cho
+                            </p>
+                            <li class="hover-effect-2 list-page-wrapper__right-side__content__body__upper__tag-group__item painting-tag">
+                                <i class="fa-solid fa-xmark"></i>
+                                Con người
+                            </li>
+                            <li class="hover-effect-2 list-page-wrapper__right-side__content__body__upper__tag-group__item painting-tag">
+                                <i class="fa-solid fa-xmark"></i>
+                                "Con mèo mà trèo cây cau"
+                            </li>
+                            <li class="list-page-wrapper__right-side__content__body__upper__tag-group__item">
+                                <button class="hover-effect-yellow-bright btn list-page-wrapper__right-side__content__body__upper__tag-group__item__button">
+                                    <i class="fa-solid fa-rotate"></i> Đặt lại 
+                                </button>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="list-page-wrapper__right-side__content__body__lower">
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/11_test_3.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/11_test_3.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/an_tuong.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/an_tuong.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/11_test_1.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/11_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/chan_dung.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/chan_dung.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/43_test_2.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/43_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/bieu_hien.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/bieu_hien.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/916_test_1.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/916_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/hanh_dong.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/hanh_dong.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/11_test_2.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/11_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/lang_man.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/lang_man.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/916_test_2.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/916_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/can_canh.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/can_canh.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/43_test_1.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/43_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/phong_canh.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/phong_canh.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/11_test_3.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/11_test3.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/an_tuong.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/an_tuong.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/11_test_1.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/11_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/chan_dung.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/chan_dung.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/43_test_2.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/43_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/bieu_hien.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/bieu_hien.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/916_test_1.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/916_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/hanh_dong.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/hanh_dong.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/11_test_2.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/11_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/lang_man.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/lang_man.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/916_test_2.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/916_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/can_canh.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/can_canh.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/43_test_1.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/43_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="list-page-wrapper__right-side__content__body__lower__product-item">
-                            <img src="../assets/images/phong_canh.png" alt="" class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <img src="../assets/images/phong_canh.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <h4
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__title">
+                                    Tranh con mèo mà trèo cây cau hỏi thăm chú chuột đi đâu vắng nhà
+                                </h4>
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        <i class="fa-solid fa-cart-shopping"></i> Mua
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        <i class="fa-solid fa-plus"></i> Thêm vào giỏ
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1233,6 +1745,12 @@
 </body>
 
 <script>
+    const rightSideFilterBarTablet = document.getElementById("rightSideFilterBarTablet");
+    function toggleRightSideFilterBarTablet(element) {
+        element.classList.toggle("activated");
+        rightSideFilterBarTablet.classList.toggle("activated");
+    }
+
     const rightSideFilterBar = document.getElementById("rightSideFilterBar");
     function toggleFilterBar(element) {
         rightSideFilterBar.classList.toggle("activated");
@@ -1272,7 +1790,5 @@
         });
     }
 </script>
-
-
 
 </html>
