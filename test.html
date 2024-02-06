@@ -1,0 +1,14 @@
+
+
+
+<%@ page buffer="256kb" %>
+<%@ 
+include file="webadmin.jsp" %>
+<% 
+HardCore.Page.OutputContent(mytext, myserver, myrequest, myresponse, mysession, db, out, cms.DisplayPage(myrequest.getParameter("id"), "body", "")); 
+String save_session_mode = mysession.get("mode"); 
+mysession.set("mode", ""); 
+cms.ReadPage(myrequest.getParameter("id")); 
+myresponse.setContentType("application/xml"); 
+mysession.set("mode", save_session_mode); 
+%> <% cms.CMSLog(myrequest.getParameter("id"), "page", ""); %> <% if (db != null) db.close(); %> <% if (logdb != null) logdb.close(); %>
