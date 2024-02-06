@@ -2,11 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600&display=swap');
 
-
-
 /*#region BASE*/
 html {
     scroll-behavior: smooth;
+}
+
+button > * {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+i {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 a {
@@ -40,6 +50,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 3px;
+    height: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -139,7 +150,7 @@ body {
     --border-radius-3: 9px;
 
     /* Masonry gap */
-    --masonry-gap: 3px;
+    --masonry-gap: 7.2px;
 }
 
 /*#endregion*/
@@ -208,6 +219,11 @@ body {
 
 /*#region BUTTON*/
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
     border-radius: 21px;
     color: var(--text-color);
     line-height: 1.2;
@@ -309,16 +325,6 @@ input[type="text"].no-border {
 /*#endregion*/
 /*#endregion*/
 
-/*#region Ripple*/
-span.ripple {
-    position: absolute;
-    border-radius: 50%;
-    transform: scale(0);
-    animation: ripple 600ms linear;
-    background-color: var(--level3-color);
-}
-/*#endregion*/
-
 /*#region Painting Tag*/
 .painting-tag {
     display: flex;
@@ -389,7 +395,7 @@ span.ripple {
 /*#region OTHER*/
 @keyframes ripple {
     to {
-        transform: scale(4);
+        transform: translate(-50%, -50%) scale(3);
         opacity: 0;
     }
 }
@@ -565,18 +571,10 @@ span.ripple {
     .list-page-wrapper__right-side__content__body__lower {
         column-count: 5;
     }
-
-    h1 {
-        border: 1px solid red;
-    }
 }
 
 /* Below Large screens and desktops [NORMAL SCREEN] */
 @media (max-width: 1602px) {
-    h1 {
-        border: 1px solid blue;
-    }
-
     .list-page-wrapper__right-side__content__body__lower {
         column-count: 4;
     }
@@ -601,16 +599,20 @@ span.ripple {
 
 /* Below Average screen [SMALL SCREEN] */
 @media (max-width: 1333px) {
-    h1 {
-        border: 1px solid orangered;
-    }
-
     .list-page-wrapper {
         /* Left side */
         --left-side-width: 6%;
         --left-side-upper-height: 11.1%;
         --list-page-wrapper-padding: 0.81%;
         --left-side-gap: calc(var(--list-page-wrapper-padding) * 1.618);
+    }
+
+    .list-page-wrapper__right-side__content__header__user-group__cart-group-mobile {
+        display: block;
+    }
+
+    .list-page-wrapper__right-side__content__header__user-group__cart-group {
+        display: none;
     }
 
     .list-page-wrapper__left-side__upper {
@@ -640,10 +642,6 @@ span.ripple {
 
 /* Below small screen [TABLET] */
 @media (max-width: 1023px) {
-    h1 {
-        border: 1px solid green;
-    }
-
     .list-page-wrapper__right-side__content__header__search-group {
         width: 300px;
     }
@@ -723,6 +721,30 @@ span.ripple {
 
 /* Below Tablets [LARGE PHONE] */
 @media (max-width: 739px) {
+    .list-page-wrapper__right-side__content__header__user-group {
+        display: none;
+    }
+
+    .list-page-wrapper__right-side__content__body__mobile-search-group {
+        display: flex;
+    }
+
+    .list-page-wrapper__right-side__content__body__mobile-filter-group {
+        display: flex;
+    }
+
+    .list-page-wrapper__right-side__content__body__upper {
+        display: none;
+    }
+
+    .list-page-wrapper__right-side__content__body__lower__product-item {
+        border-radius: var(--border-radius-3);
+    }
+
+    .list-page-wrapper__right-side__content__body {
+        padding: 0 18px;
+    }
+
     .list-page-wrapper__right-side__content {
         border: none;
     }
@@ -795,10 +817,6 @@ span.ripple {
 
 /* Mobile normal to high resolution [SMALL PHONE] */
 @media (max-width: 480px) {
-    h1 {
-        border: 1px solid purple;
-    }
-
     .landing-page__responsive__mobile__banner__left-side__title {
         margin-left: 15%;
     }
