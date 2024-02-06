@@ -1103,16 +1103,22 @@
                         <div class="list-page-wrapper__right-side__content__header__mobile-title__gradient-container">
                             <h1
                                 class="list-page-wrapper__right-side__content__header__mobile-title__gradient-container__background">
-                                Hudagon
+                                Logo
                             </h1>
                         </div>
                     </div>
 
                     <div class="list-page-wrapper__right-side__content__header__search-group">
-                        <input tabindex="1" type="text" placeholder="Bạn muốn tìm gì?"
+                        <input id="mobileSearchInput" tabindex="1" type="text" placeholder="Tìm tranh..."
                             class="round list-page-wrapper__right-side__content__header__search-group__search-bar">
                         <i class="hover-effect-yellow-bright fa-solid fa-xmark"></i>
                         <i tabindex="2" class="hover-effect-yellow-bright fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <div class="list-page-wrapper__right-side__content__header__hamburger-group" id="hamburger-bar">
+                        <div id="bar1" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
+                        <div id="bar2" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
+                        <div id="bar3" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
                     </div>
 
                     <div class="list-page-wrapper__right-side__content__header__user-group">
@@ -1203,10 +1209,10 @@
                         </div>
 
                         <div onclick="toggleMobileDropdown()"
-                            class="list-page-wrapper__right-side__content__header__user-group__cart-group-mobile">
+                            class="list-page-wrapper__right-side__content__header__user-group__cart-group-tablet">
                             <i class="hover-effect-yellow-bright fa-solid fa-cart-shopping"></i>
                             <span
-                                class="list-page-wrapper__right-side__content__header__user-group__cart-group-mobile__amount">
+                                class="list-page-wrapper__right-side__content__header__user-group__cart-group-tablet__amount">
                                 0
                             </span>
                         </div>
@@ -1277,13 +1283,6 @@
                 </div>
 
                 <div class="list-page-wrapper__right-side__content__body">
-                    <div class="list-page-wrapper__right-side__content__body__mobile-search-group">
-                        <input placeholder="Bạn muốn tìm gì?" type="text"
-                            class="list-page-wrapper__right-side__content__body__mobile-search-group__input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-
                     <div class="list-page-wrapper__right-side__content__body__upper">
                         <ul class="list-page-wrapper__right-side__content__body__upper__tag-group">
                             <p class="list-page-wrapper__right-side__content__body__upper__results">
@@ -1322,6 +1321,472 @@
                             Chủ đề
                         </li>
                     </ul>
+
+                    <div class="list-page-wrapper__right-side__content__body__lower">
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/11_test_3.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/916_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/can_canh.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/an_tuong.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/11_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/chan_dung.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/916_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/hanh_dong.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/43_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/bieu_hien.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/11_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/lang_man.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/43_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/phong_canh.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/11_test_3.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/an_tuong.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/11_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/chan_dung.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/43_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/bieu_hien.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/916_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/hanh_dong.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/11_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/lang_man.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/916_test_2.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/can_canh.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/43_test_1.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-page-wrapper__right-side__content__body__lower__product-item">
+                            <img src="../assets/images/phong_canh.png" alt=""
+                                class="list-page-wrapper__right-side__content__body__lower__product-item__img">
+                            <div class="list-page-wrapper__right-side__content__body__lower__product-item__info">
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
+                                        Xem trước
+                                    </button>
+                                    <button
+                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
+                                        Chi tiết tác phẩm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1329,6 +1794,19 @@
 </body>
 
 <script>
+    const mobileSearchInput = document.getElementById("mobileSearchInput");
+    mobileSearchInput.addEventListener('focus', function() {
+        this.parentNode.parentNode.children[0].classList.toggle("invisible");
+        this.parentNode.classList.toggle("expand");
+    });
+    mobileSearchInput.addEventListener('blur', function() {
+        this.parentNode.parentNode.children[0].classList.toggle("invisible");
+        this.parentNode.classList.toggle("expand");
+    });
+    navigator.virtualKeyboard.addEventListener("geometrychange", (event) => {
+        alert('vô');
+    });
+
     const mobileDropdown = document.getElementById("mobileDropdown");
     function toggleMobileDropdown() {
         mobileDropdown.classList.toggle("activated");
