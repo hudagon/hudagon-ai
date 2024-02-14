@@ -1115,12 +1115,6 @@
                         <i tabindex="2" class="hover-effect-yellow-bright fa-solid fa-magnifying-glass"></i>
                     </div>
 
-                    <div class="list-page-wrapper__right-side__content__header__hamburger-group" id="hamburger-bar">
-                        <div id="bar1" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
-                        <div id="bar2" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
-                        <div id="bar3" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
-                    </div>
-
                     <div class="list-page-wrapper__right-side__content__header__user-group">
                         <div class="list-page-wrapper__right-side__content__header__user-group__cart-group">
                             <i class="hover-effect-yellow-bright fa-solid fa-cart-shopping"></i>
@@ -1790,10 +1784,66 @@
                 </div>
             </div>
         </div>
+
+        <div class="list-page-wrapper__mobile-utilities">
+            <div onclick="toggleMobileCart()" class="list-page-wrapper__mobile-utilities__cart-group">
+                <i class="hover-effect-yellow-bright fa-solid fa-cart-shopping"></i>
+                <span
+                    class="list-page-wrapper__mobile-utilities__cart-group__amount">
+                    0
+                </span>
+            </div>
+            <div id="mobileCart" class="list-page-wrapper__mobile-utilities__cart-group-dropdown">
+                <div class="list-page-wrapper__mobile-utilities__cart-group-dropdown__header">
+                    <a href="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__header__to-cart-link">
+                        Đi đến giỏ hàng
+                    </a>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <ul class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body">
+                    <li class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item">
+                        <img src="../assets/images/test-cat.jpg" alt="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__img">
+                        <div class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info">
+                            <h2 class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__title">
+                                Tranh con mèo mà trèo cây cau
+                            </h2>
+
+                            <a href="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__view-detail-link">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </li>                    
+                    <li class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item">
+                        <img src="../assets/images/test-cat.jpg" alt="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__img">
+                        <div class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info">
+                            <h2 class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__title">
+                                Tranh con mèo mà trèo cây cau
+                            </h2>
+
+                            <a href="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__view-detail-link">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list-page-wrapper__right-side__content__header__hamburger-group" id="hamburger-bar">
+                <div id="bar1" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
+                <div id="bar2" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
+                <div id="bar3" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
+            </div>
+        </div>
     </div>
 </body>
 
 <script>
+    const mobileCart = document.getElementById("mobileCart");
+    function toggleMobileCart() {
+        mobileCart.classList.toggle("activated");
+    }
+
     const mobileSearchInput = document.getElementById("mobileSearchInput");
     mobileSearchInput.addEventListener('focus', function() {
         this.parentNode.parentNode.children[0].classList.toggle("invisible");
