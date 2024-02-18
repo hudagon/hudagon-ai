@@ -1829,20 +1829,35 @@
                 </ul>
             </div>
 
-            <div class="list-page-wrapper__right-side__content__header__hamburger-group" id="hamburger-bar">
+            <div onclick="toggleHamburgerContent()" class="list-page-wrapper__right-side__content__header__hamburger-group">
                 <div id="bar1" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
                 <div id="bar2" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
                 <div id="bar3" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
             </div>
 
-            <div class="list-page-wrapper__mobile-utilities__hamburger-content activated">
-                
+            <div id="hamburger-content" class="list-page-wrapper__mobile-utilities__hamburger-content">
+                <div class="list-page-wrapper__mobile-utilities__hamburger-content__left-side">
+
+                </div>
+                <div class="list-page-wrapper__mobile-utilities__hamburger-content__right-side">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-address-book"></i>
+                    <div class="list-page-wrapper__mobile-utilities__hamburger-content__right-side__info-group">
+                        <i class="fa-solid fa-info"></i>
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
 
 <script>
+    const hamburgerContent = document.getElementById("hamburger-content");
+    function toggleHamburgerContent() {
+        hamburgerContent.classList.toggle("activated");
+    }
+
     const mobileCart = document.getElementById("mobileCart");
     function toggleMobileCart() {
         mobileCart.classList.toggle("activated");
