@@ -503,6 +503,10 @@ input[type="text"].no-border {
     }
 }
 
+.touch-active {
+    filter: brightness(1.5);
+}
+
 .hover-effect-yellow-bright,
 .hover-effect-2,
 .hover-effect-painting-tag,
@@ -514,7 +518,7 @@ input[type="text"].no-border {
     transition: all 0.3s ease;
 }
 
-.hover-effect-brighter-opaquer:hover {
+.hovering.hover-effect-brighter-opaquer:hover {
     background-color: rgba(0, 0, 0, 0.349);
     filter: brightness(1.2);
 }
@@ -645,6 +649,10 @@ input[type="text"].no-border {
 
 /* Below small screen [TABLET] */
 @media (max-width: 1023px) {
+    .list-page-wrapper__right-side__content__body__lower__product-item__info {
+        display: none;
+    }
+
     .list-page-wrapper__right-side__content__header__search-group {
         width: 300px;
     }

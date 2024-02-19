@@ -1299,21 +1299,68 @@
                     </div>
 
                     <ul class="list-page-wrapper__right-side__content__body__mobile-filter-group">
-                        <li class="list-page-wrapper__right-side__content__body__mobile-filter-group__item">
+                        <li onclick="toggleMobileFilterContent()"
+                            class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__item">
                             Chủ thể
                         </li>
-                        <li class="list-page-wrapper__right-side__content__body__mobile-filter-group__item">
+                        <li onclick="toggleMobileFilterContent()"
+                            class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__item">
                             Phong cách
                         </li>
-                        <li class="list-page-wrapper__right-side__content__body__mobile-filter-group__item">
-                            Kích thước
+                        <li onclick="toggleMobileFilterContent()"
+                            class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__item">
+                            Tỉ lệ khung hình
                         </li>
-                        <li class="list-page-wrapper__right-side__content__body__mobile-filter-group__item">
+                        <li onclick="toggleMobileFilterContent()"
+                            class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__item">
                             Màu sắc
                         </li>
-                        <li class="list-page-wrapper__right-side__content__body__mobile-filter-group__item">
+                        <li onclick="toggleMobileFilterContent()"
+                            class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__item">
                             Chủ đề
                         </li>
+
+                        <ul id="mobileFilterContent"
+                            class="list-page-wrapper__right-side__content__body__mobile-filter-group__content">
+                            <div
+                                class="list-page-wrapper__right-side__content__body__mobile-filter-group__content__header">
+                                <span>Chủ thể</span>
+
+                                <div
+                                    class="list-page-wrapper__right-side__content__body__mobile-filter-group__content__header__icon-group">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+
+                            <ul
+                                class="list-page-wrapper__right-side__content__body__mobile-filter-group__content__body">
+                                <li
+                                    class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__content__body__item">
+                                    <input type="checkbox"> Con người
+                                </li>
+                                <li
+                                    class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__content__body__item">
+                                    <input type="checkbox"> Con người
+                                </li>
+                                <li
+                                    class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__content__body__item">
+                                    <input type="checkbox"> Con người
+                                </li>
+                                <li
+                                    class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__content__body__item">
+                                    <input type="checkbox"> Con người
+                                </li>
+                                <li
+                                    class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__content__body__item">
+                                    <input type="checkbox"> Con người
+                                </li>
+                                <li
+                                    class="hover-effect-silver-border list-page-wrapper__right-side__content__body__mobile-filter-group__content__body__item">
+                                    <input type="checkbox"> Con người
+                                </li>
+                            </ul>
+                        </ul>
                     </ul>
 
                     <div class="list-page-wrapper__right-side__content__body__lower">
@@ -1324,12 +1371,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1341,12 +1384,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1358,12 +1397,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1375,12 +1410,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1392,12 +1423,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1409,12 +1436,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1426,12 +1449,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1443,12 +1462,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1460,12 +1475,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1477,12 +1488,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1494,12 +1501,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1511,12 +1514,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1528,12 +1527,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1545,12 +1540,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1566,12 +1557,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1583,12 +1570,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1600,12 +1583,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1617,12 +1596,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1634,12 +1609,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1651,12 +1622,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1668,12 +1635,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1685,12 +1648,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1702,12 +1661,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1719,12 +1674,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1736,12 +1687,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1753,12 +1700,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1770,12 +1713,8 @@
                                 <div
                                     class="list-page-wrapper__right-side__content__body__lower__product-item__info__button-group">
                                     <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button purchase">
-                                        Xem trước
-                                    </button>
-                                    <button
-                                        class="hover-effect-silver-border btn list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button add-to-cart">
-                                        Chi tiết tác phẩm
+                                        class="hover-effect-silver-border list-page-wrapper__right-side__content__body__lower__product-item__info__button-group__button">
+                                        Xem trước
                                     </button>
                                 </div>
                             </div>
@@ -1788,8 +1727,7 @@
         <div class="list-page-wrapper__mobile-utilities">
             <div onclick="toggleMobileCart()" class="list-page-wrapper__mobile-utilities__cart-group">
                 <i class="hover-effect-yellow-bright fa-solid fa-cart-shopping"></i>
-                <span
-                    class="list-page-wrapper__mobile-utilities__cart-group__amount">
+                <span class="list-page-wrapper__mobile-utilities__cart-group__amount">
                     0
                 </span>
             </div>
@@ -1803,25 +1741,31 @@
 
                 <ul class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body">
                     <li class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item">
-                        <img src="../assets/images/test-cat.jpg" alt="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__img">
+                        <img src="../assets/images/test-cat.jpg" alt=""
+                            class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__img">
                         <div class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info">
-                            <h2 class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__title">
+                            <h2
+                                class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__title">
                                 Tranh con mèo mà trèo cây cau
                             </h2>
 
-                            <a href="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__view-detail-link">
+                            <a href=""
+                                class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__view-detail-link">
                                 Xem chi tiết
                             </a>
                         </div>
-                    </li>                    
+                    </li>
                     <li class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item">
-                        <img src="../assets/images/test-cat.jpg" alt="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__img">
+                        <img src="../assets/images/test-cat.jpg" alt=""
+                            class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__img">
                         <div class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info">
-                            <h2 class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__title">
+                            <h2
+                                class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__title">
                                 Tranh con mèo mà trèo cây cau
                             </h2>
 
-                            <a href="" class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__view-detail-link">
+                            <a href=""
+                                class="list-page-wrapper__mobile-utilities__cart-group-dropdown__body__item__info__view-detail-link">
                                 Xem chi tiết
                             </a>
                         </div>
@@ -1829,7 +1773,8 @@
                 </ul>
             </div>
 
-            <div onclick="toggleHamburgerContent()" class="list-page-wrapper__right-side__content__header__hamburger-group">
+            <div onclick="toggleHamburgerContent()"
+                class="list-page-wrapper__right-side__content__header__hamburger-group">
                 <div id="bar1" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
                 <div id="bar2" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
                 <div id="bar3" class="list-page-wrapper__right-side__content__header__hamburger-group__bar"></div>
@@ -1853,6 +1798,24 @@
 </body>
 
 <script>
+    const hoverEffectElements = document.querySelectorAll(' [class^="hover-effect" ], [class*=" hover-effect" ]');
+    hoverEffectElements.forEach((element) => {
+        element.addEventListener('touchstart', function () {
+            this.classList.add('touch-active');
+        }, { passive: true });
+
+        element.addEventListener('touchend', function () {
+            setTimeout(() => {
+                this.classList.remove('touch-active');
+            }, 120);
+        }, { passive: true });
+    });
+
+    const mobileFilterContent = document.getElementById('mobileFilterContent');
+    function toggleMobileFilterContent() {
+        mobileFilterContent.classList.toggle('activated');
+    }
+
     const hamburgerContent = document.getElementById("hamburger-content");
     function toggleHamburgerContent() {
         hamburgerContent.classList.toggle("activated");
@@ -1864,16 +1827,13 @@
     }
 
     const mobileSearchInput = document.getElementById("mobileSearchInput");
-    mobileSearchInput.addEventListener('focus', function() {
+    mobileSearchInput.addEventListener('focus', function () {
         this.parentNode.parentNode.children[0].classList.toggle("invisible");
         this.parentNode.classList.toggle("expand");
     });
-    mobileSearchInput.addEventListener('blur', function() {
+    mobileSearchInput.addEventListener('blur', function () {
         this.parentNode.parentNode.children[0].classList.toggle("invisible");
         this.parentNode.classList.toggle("expand");
-    });
-    navigator.virtualKeyboard.addEventListener("geometrychange", (event) => {
-        alert('vô');
     });
 
     const mobileDropdown = document.getElementById("mobileDropdown");
@@ -1908,28 +1868,77 @@
         }
     }
 
-    var dropDownButtonLevel2 = document.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__accordion");
+    var dropDownButtonLevel2 =
+        document.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__accordion");
     for (let i = 0; i < dropDownButtonLevel2.length; i++) {
-        dropDownButtonLevel2[i].addEventListener("click", function () {
-            this.children[1].classList.toggle("activated");
-            this.classList.toggle("activated");
-            let panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                let arrLevel3Panel = panel.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper");
-                if (arrLevel3Panel) {
-                    let totalHeight = 0;
-                    for (let i = 0; i < arrLevel3Panel.length; i++) {
-                        totalHeight += arrLevel3Panel[i].scrollHeight;
+        dropDownButtonLevel2[i].addEventListener("click",
+            function () {
+                this.children[1].classList.toggle("activated"); this.classList.toggle("activated"); let
+                    panel = this.nextElementSibling; if (panel.style.maxHeight) { panel.style.maxHeight = null; } else {
+                        let
+                        arrLevel3Panel = panel.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper");
+                        if (arrLevel3Panel) {
+                            let totalHeight = 0; for (let i = 0; i < arrLevel3Panel.length; i++) {
+                                totalHeight
+                                += arrLevel3Panel[i].scrollHeight;
+                            } panel.style.maxHeight = totalHeight + "px";
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
                     }
-                    panel.style.maxHeight = totalHeight + "px";
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            }
-        });
-    }
-</script>
+            });
+    } function doSubmit(input, value, section,
+        submittext) {
+            doPreviewFix = new Object(); input.form.importfile.value = value; if
+                (document.getElementById(section + '_importparams')) {
+                    try { // Mozilla/Firefox may not register DIV
+                when setting TD innerHTML document.getElementById(section + '_importparams').innerHTML = '<td>' +
+                            input.parentNode.innerHTML
+                            + '<p><ul id="adminmenu" class="WCMactionmenu"><li id="submitimport" class="WCMactionmenu_item WCMactionmenu_single"><a id="submitimport_text" href="javascript:if (document.'
+                            + section + 'form) { enableAll(document.' + section + 'form); document.' + section
+                            + 'form.submit(); } else { enableAll(document.website); document.website.submit(); }">' + submittext
+                            + '</a></li><li id="fileinput" class="WCMactionmenu_plain"><input type="checkbox" name="dummy" value="yes" onchange="document.getElementById(\'
+                importids\').checked=this.checked;"' + (document.getElementById('importids') &&
+                            document.getElementById('importids').checked ? " checked" : "")
+                            + '> Import ids from website data file.</li></ul></p></td>';
+                    } catch (e) { // Microsoft Internet
+                Explorer may fail when setting TR innerHTML try {
+                            var mycontainer = document.getElementById(section
+                                + '_importparams').firstChild; while (mycontainer && (mycontainer.nodeName == "#text"))
+                                mycontainer = mycontainer.nextSibling; if (mycontainer) mycontainer.innerHTML = input.parentNode.innerHTML
+                                    + '<p><ul id="adminmenu" class="WCMactionmenu"><li id="submitimport" class="WCMactionmenu_item WCMactionmenu_single"><a id="submitimport_text" href="javascript:if (document.'
+                                    + section + 'form) { enableAll(document.' + section + 'form); document.' + section
+                                    + 'form.submit(); } else { enableAll(document.website); document.website.submit(); }">' + submittext
+                                    + '</a></li><li id="fileinput" class="WCMactionmenu_plain"><input type="checkbox" name="dummy" value="yes" onchange="document.getElementById(\'
+                importids\').checked=this.checked;"' + (document.getElementById('importids') &&
+                                document.getElementById('importids').checked ? " checked" : "")
+                                + '> Import ids from website data file.</li></ul></p>';
+                        } catch (e) { }
+                    } window.scrollTo(0, 0); //
+                Removed XyXon 2015 - 07 - 07 V9.2.1 Merge Start // document.getElementById(section + '_importparams'
+                ).scrollIntoView(); // Removed XyXon 2015-07-07 V9.2.1 Merge End if
+                (document.getElementById("submitimport")) document.getElementById("submitimport").focus(); var
+                    nodes = document.getElementById(section + '_importparams').getElementsByTagName('DIV'); for (var i = 0; i <
+                        nodes.length; i++) {
+                            if (nodes[i].className == 'import_parameters') { nodes[i].style.display = "block"; }
+                } var nodes = document.getElementById(section + '_importparams').getElementsByTagName('INPUT'); for (var
+                    i = 0; i < nodes.length; i++) {
+                        while (nodes[i] && nodes[i].className == 'importfileselect') {
+                            nodes[i].parentNode.removeChild(nodes[i]);
+                        }
+                } var nodes = document.getElementById(section
+                    + '_importparams').getElementsByTagName('INPUT'); for (var i = 0; i < nodes.length; i++) {
+                        nodes[i].disabled = false;
+                    } var nodes = document.getElementById(section + '_importparams'
+                    ).getElementsByTagName('SELECT'); for (var i = 0; i < nodes.length; i++) { nodes[i].disabled = false; } var
+                        nodes = document.getElementById(section + '_importparams').getElementsByTagName('TEXTAREA'); for (var
+                            i = 0; i < nodes.length; i++) { nodes[i].disabled = false; }
+            } if (document.getElementById(section
+                + '_importoptions')) { document.getElementById(section + '_importoptions').style.display = "none"; } if
+            (document.getElementById(section + '_importupload')) {
+                document.getElementById(section
+                    + '_importupload').style.display = "none";
+        }
+    } </script>
 
 </html>
