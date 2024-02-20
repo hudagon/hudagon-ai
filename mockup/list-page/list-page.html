@@ -1887,58 +1887,7 @@
                         }
                     }
             });
-    } function doSubmit(input, value, section,
-        submittext) {
-            doPreviewFix = new Object(); input.form.importfile.value = value; if
-                (document.getElementById(section + '_importparams')) {
-                    try { // Mozilla/Firefox may not register DIV
-                when setting TD innerHTML document.getElementById(section + '_importparams').innerHTML = '<td>' +
-                            input.parentNode.innerHTML
-                            + '<p><ul id="adminmenu" class="WCMactionmenu"><li id="submitimport" class="WCMactionmenu_item WCMactionmenu_single"><a id="submitimport_text" href="javascript:if (document.'
-                            + section + 'form) { enableAll(document.' + section + 'form); document.' + section
-                            + 'form.submit(); } else { enableAll(document.website); document.website.submit(); }">' + submittext
-                            + '</a></li><li id="fileinput" class="WCMactionmenu_plain"><input type="checkbox" name="dummy" value="yes" onchange="document.getElementById(\'
-                importids\').checked=this.checked;"' + (document.getElementById('importids') &&
-                            document.getElementById('importids').checked ? " checked" : "")
-                            + '> Import ids from website data file.</li></ul></p></td>';
-                    } catch (e) { // Microsoft Internet
-                Explorer may fail when setting TR innerHTML try {
-                            var mycontainer = document.getElementById(section
-                                + '_importparams').firstChild; while (mycontainer && (mycontainer.nodeName == "#text"))
-                                mycontainer = mycontainer.nextSibling; if (mycontainer) mycontainer.innerHTML = input.parentNode.innerHTML
-                                    + '<p><ul id="adminmenu" class="WCMactionmenu"><li id="submitimport" class="WCMactionmenu_item WCMactionmenu_single"><a id="submitimport_text" href="javascript:if (document.'
-                                    + section + 'form) { enableAll(document.' + section + 'form); document.' + section
-                                    + 'form.submit(); } else { enableAll(document.website); document.website.submit(); }">' + submittext
-                                    + '</a></li><li id="fileinput" class="WCMactionmenu_plain"><input type="checkbox" name="dummy" value="yes" onchange="document.getElementById(\'
-                importids\').checked=this.checked;"' + (document.getElementById('importids') &&
-                                document.getElementById('importids').checked ? " checked" : "")
-                                + '> Import ids from website data file.</li></ul></p>';
-                        } catch (e) { }
-                    } window.scrollTo(0, 0); //
-                Removed XyXon 2015 - 07 - 07 V9.2.1 Merge Start // document.getElementById(section + '_importparams'
-                ).scrollIntoView(); // Removed XyXon 2015-07-07 V9.2.1 Merge End if
-                (document.getElementById("submitimport")) document.getElementById("submitimport").focus(); var
-                    nodes = document.getElementById(section + '_importparams').getElementsByTagName('DIV'); for (var i = 0; i <
-                        nodes.length; i++) {
-                            if (nodes[i].className == 'import_parameters') { nodes[i].style.display = "block"; }
-                } var nodes = document.getElementById(section + '_importparams').getElementsByTagName('INPUT'); for (var
-                    i = 0; i < nodes.length; i++) {
-                        while (nodes[i] && nodes[i].className == 'importfileselect') {
-                            nodes[i].parentNode.removeChild(nodes[i]);
-                        }
-                } var nodes = document.getElementById(section
-                    + '_importparams').getElementsByTagName('INPUT'); for (var i = 0; i < nodes.length; i++) {
-                        nodes[i].disabled = false;
-                    } var nodes = document.getElementById(section + '_importparams'
-                    ).getElementsByTagName('SELECT'); for (var i = 0; i < nodes.length; i++) { nodes[i].disabled = false; } var
-                        nodes = document.getElementById(section + '_importparams').getElementsByTagName('TEXTAREA'); for (var
-                            i = 0; i < nodes.length; i++) { nodes[i].disabled = false; }
-            } if (document.getElementById(section
-                + '_importoptions')) { document.getElementById(section + '_importoptions').style.display = "none"; } if
-            (document.getElementById(section + '_importupload')) {
-                document.getElementById(section
-                    + '_importupload').style.display = "none";
-        }
-    } </script>
-
-</html>
+    } 
+    
+    </script>
+</html>f
