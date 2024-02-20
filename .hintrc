@@ -3,58 +3,25 @@
     "development"
   ],
   "hints": {
-    "axe/structure": [
-      "default",
-      {
-        "listitem": "off",
-        "list": "off"
-      }
-    ],
-    "no-inline-styles": "off",
-    "detect-css-reflows/composite": "off",
-    "detect-css-reflows/paint": "off",
-    "detect-css-reflows/layout": "off",
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
-      }
-    ],
-    "button-type": "off",
     "axe/forms": [
       "default",
       {
         "label": "off"
       }
     ],
-    "compat-api/css": [
+    "axe/text-alternatives": [
       "default",
       {
-        "ignore": [
-          "scale",
-          "backdrop-filter",
-          "scrollbar-gutter"
-        ]
+        "image-alt": "off"
       }
     ],
-    "axe/parsing": [
+    "axe/structure": [
       "default",
       {
-        "duplicate-id": "off"
+        "list": "off",
+        "listitem": "off"
       }
     ],
-    "axe/name-role-value": [
-      "default",
-      {
-        "link-name": "off"
-      }
-    ],
-    "disown-opener": "off",
-    "axe/keyboard": [
-      "default",
-      {
-        "nested-interactive": "off"
-      }
-    ]
+    "no-inline-styles": "off"
   }
 }

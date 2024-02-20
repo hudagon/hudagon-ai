@@ -1,0 +1,306 @@
+/* Height responsive */
+@media (min-height: 1365px) and (max-width: 1025px) {
+    .border-container {
+        min-width: 60% !important;
+    }
+}
+
+/* Extra Large screens and TV */
+@media (min-width: 1603px) {
+    .btn.md {
+        padding: 9px 18px;
+        width: 150px;
+    }
+
+    .list-page-wrapper__right-side__content__body__lower {
+        column-count: 5;
+    }
+}
+
+/* Below Large screens and desktops [NORMAL SCREEN] */
+@media (max-width: 1602px) {
+    .list-page-wrapper__right-side__content__body__lower {
+        column-count: 4;
+    }
+
+    :root {
+        --fs-normal: 16px;
+    }
+
+    .border-container {
+        min-width: 30%;
+    }
+
+    .btn.md {
+        padding: 9px 18px;
+        width: 150px;
+    }
+
+    .landing-page-banner__right-side {
+        width: 60%;
+    }
+}
+
+/* Below Average screen [SMALL SCREEN] */
+@media (max-width: 1333px) {
+    .list-page-wrapper {
+        /* Left side */
+        --left-side-width: 6%;
+        --left-side-upper-height: 11.1%;
+        --list-page-wrapper-padding: 0.81%;
+        --left-side-gap: calc(var(--list-page-wrapper-padding) * 1.618);
+    }
+
+    .list-page-wrapper__right-side__content__header__user-group__cart-group-tablet {
+        display: block;
+    }
+
+    .list-page-wrapper__right-side__content__header__user-group__cart-group {
+        display: none;
+    }
+
+    .list-page-wrapper__left-side__upper {
+        min-height: 0;
+    }
+
+    .list-page-wrapper__left-side {
+        min-width: 102px;
+    }
+
+    .list-page-wrapper__left-side__lower__responsive-screen {
+        display: none;
+    }
+
+    .list-page-wrapper__right-side__content__body__lower {
+        column-count: 3;
+    }
+
+    .list-page-wrapper__left-side__upper__content__title__responsive-screen {
+        display: none;
+    }
+
+    .list-page-wrapper__left-side__upper__content__title__responsive-tablet {
+        display: block;
+    }
+}
+
+/* Below small screen [TABLET] */
+@media (max-width: 1023px) {
+    .list-page-wrapper__right-side__content__body__lower__product-item__info {
+        display: none;
+    }
+
+    .list-page-wrapper__right-side__content__header__search-group {
+        width: 300px;
+    }
+
+    :root {
+        --fs-normal: 14px;
+    }
+
+    .gap-handle-landing-page {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+
+    .top-info {
+        padding: 9px 3.3%;
+    }
+
+    .border-container {
+        min-width: 80%;
+    }
+
+    .frame {
+        border-width: 6px;
+    }
+
+    .border {
+        border-width: 6px;
+    }
+
+    .landing-page-clickbate {
+        margin: 12px auto;
+        width: 162px;
+    }
+
+    .landing-page__responsive {
+        display: block;
+    }
+
+    .landing-page-service {
+        display: none;
+    }
+
+    .landing-page-banner {
+        display: none;
+    }
+
+    .landing-page-header__logo-responsive-group {
+        display: flex;
+    }
+
+    .landing-page-header__logo {
+        display: none;
+    }
+
+    .top-info__contact-list {
+        display: none;
+    }
+
+    .top-info__social-media-list {
+        display: none;
+    }
+
+    .btn.md {
+        padding: 9px 18px;
+        width: 150px;
+    }
+
+    .top-info__hamburger-bar-group {
+        display: flex;
+    }
+
+    .landing-page-header__button-group {
+        display: none;
+    }
+}
+
+/* Below Tablets [LARGE PHONE] */
+@media (max-width: 739px) {
+    .list-page-wrapper__right-side__content__body__upper {
+        padding-bottom: 0px;
+    }
+
+    .list-page-wrapper__mobile-utilities {
+        display: flex;
+    }
+
+    .list-page-wrapper__right-side__content__header__hamburger-group {
+        display: flex;
+    }
+
+    .list-page-wrapper__right-side__content__header__user-group {
+        display: none;
+    }
+
+    .list-page-wrapper__right-side__content__header__search-group {
+        padding: 0;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 1.8px;
+        z-index: 3;
+        transition: 0.3s ease;
+    }
+
+    .list-page-wrapper__right-side__content__header__search-group.expand {
+        flex: 1;
+    }
+
+    .list-page-wrapper__right-side__content__header {
+        display: flex;
+        height: 7.5%;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 18px;
+        padding-top: 1.2px;
+    }
+
+    .list-page-wrapper__right-side__content__header__mobile-title {
+        display: flex;
+    }
+
+    .list-page-wrapper__right-side__content__body__mobile-search-group {
+        display: flex;
+    }
+
+    .list-page-wrapper__right-side__content__body__mobile-filter-group {
+        display: flex;
+    }
+
+    .list-page-wrapper__right-side__content__body__lower__product-item {
+        border-radius: var(--border-radius-3);
+    }
+
+    .list-page-wrapper__right-side__content__body {
+        padding: 0 18px;
+    }
+
+    .list-page-wrapper__right-side__content {
+        border: none;
+    }
+
+    .list-page-wrapper__mobile-navigation {
+        display: flex;
+    }
+
+    .list-page-wrapper__right-side {
+        padding: 0;
+    }
+
+    .list-page-wrapper {
+        --right-side-width: 100%;
+    }
+
+    .list-page-wrapper__left-side {
+        display: none;
+    }
+
+    h1 {
+        border: 1px solid transparent;
+    }
+
+    .list-page-wrapper__right-side__content__body__lower {
+        column-count: 2;
+    }
+
+    :root {
+        --fs-normal: 14px;
+    }
+
+    .landing-page__responsive__tablet-hamburger-content-mobile {
+        display: flex;
+    }
+
+    .top-info__hamburger-bar-group {
+        display: none;
+    }
+
+    .top-info__hamburger-bar-group.mobile {
+        display: flex;
+    }
+
+    .landing-page__responsive__mobile {
+        display: block;
+    }
+
+    .border-container {
+        min-width: 40%;
+    }
+
+    .landing-page__responsive__tablet {
+        display: none;
+    }
+
+    .landing-page-clickbate {
+        width: 120px;
+        padding: 6px 12px;
+    }
+}
+
+/* Mobile normal to high resolution [SMALL PHONE] */
+@media (max-width: 480px) {
+    .landing-page__responsive__mobile__banner__left-side__title {
+        margin-left: 15%;
+    }
+
+    .landing-page-clickbate {
+        width: 102px;
+        padding: 6px 12px;
+    }
+
+    .landing-page__responsive__mobile__banner__right-side__bottom__sub-desc {
+        margin-left: 6%;
+    }
+}
