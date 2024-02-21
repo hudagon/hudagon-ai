@@ -81,12 +81,6 @@ body {
 
 /*#region VARIABLES*/
 :root {
-    /* Landing Page Height */
-    --top-info-height: 3.6svh;
-    --header-height: 7.6svh;
-    --banner-height: 50svh;
-    --service-height: 33svh;
-
     /* Scrollbar */
     --vertical-width: 3px;
     --horizontal-height: 3px;
@@ -152,5 +146,50 @@ body {
     /* Masonry gap */
     --masonry-gap: 7.2px;
 }
-
 /*#endregion*/
+
+/*#region HOVER EFFECT*/
+.hover-effect-yellow-bright,
+.hover-effect-2,
+.hover-effect-painting-tag,
+.hover-effect-button-1,
+.hover-effect-menu-1,
+.hover-effect-silver-border,
+.hover-effect-brighter-opaquer {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hovering.hover-effect-brighter-opaquer:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+    filter: brightness(1.2);
+}
+
+.hover-effect-yellow-bright:hover {
+    color: var(--secondary-color);
+    filter: brightness(1.2);
+}
+
+.hover-effect-silver-border:hover {
+    border-color: var(--light-border-color);
+    filter: brightness(1.152);
+}
+
+.hover-effect-2:hover {
+    color: var(--danger-color);
+    filter: brightness(1.2);
+}
+
+.hover-effect-button-1:hover {
+    color: var(--secondary-color);
+    filter: brightness(1.2);
+    box-shadow: 0px 1px 21px -9px #c5b358;
+}
+
+.hover-effect-menu-1:hover {
+    color: var(--secondary-color);
+    filter: brightness(1.2);
+    transform: translateX(3px);
+}
+/*#endregion*/
+    

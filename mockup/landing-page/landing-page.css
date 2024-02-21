@@ -750,8 +750,6 @@
 .landing-page-header__logo-responsive-group__logo {
     flex: 1;
 }
-
-
 /*#endregion*/
 
 /*#region Landing Page banner*/
@@ -981,9 +979,6 @@
     padding: 9px 18px;
     width: 210px;
     margin-top: 18px;
-}
-
-.landing-page-clickbate {
     color: var(--dark-text-color);
     font-size: var(--fs-larger-2);
     background: linear-gradient(90deg, #3e008a, #3c0084, #7300ff, #3e008a);
