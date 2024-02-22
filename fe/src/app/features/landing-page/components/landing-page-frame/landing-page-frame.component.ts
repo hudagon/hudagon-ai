@@ -10,6 +10,5 @@ export class LandingPageFrameComponent implements OnInit {
   @Input() aspectRatio: string | undefined; 
 
   ngOnInit(): void {
-    console.log(this.imgUrl, this.aspectRatio);
   }
 }

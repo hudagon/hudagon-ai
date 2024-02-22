@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { LandingPageRoutingModule } from './landing-page-routing.module';
 import { LayoutComponent } from './components/layout/layout.component';
 import { TopInfoComponent } from './components/top-info/top-info.component';
@@ -9,21 +8,34 @@ import { LandingPageDesktopBodyComponent } from './components/landing-page-deskt
 import { LandingPageTabletBodyComponent } from './components/landing-page-tablet-body/landing-page-tablet-body.component';
 import { LandingPageMobileBodyComponent } from './components/landing-page-mobile-body/landing-page-mobile-body.component';
 import { LandingPageFrameComponent } from './components/landing-page-frame/landing-page-frame.component';
-
+import { ThemeBarComponent } from './components/theme-bar/theme-bar.component';
+import { MainSharedModule } from "../../shareds/main-shared/main-shared.module";
+import { LandingPageServiceSubjectComponent } from './components/landing-page-service-subject/landing-page-service-subject.component';
+import { LandingPageServiceTopicComponent } from './components/landing-page-service-topic/landing-page-service-topic.component';
+import { LandingPageServiceStyleComponent } from './components/landing-page-service-style/landing-page-service-style.component';
+import { LandingPageServiceColorComponent } from './components/landing-page-service-color/landing-page-service-color.component';
+import { AuthModule } from 'src/app/auth/auth.module';
 
 @NgModule({
-  declarations: [
-    LayoutComponent,
-    TopInfoComponent,
-    LandingPageHeaderComponent,
-    LandingPageDesktopBodyComponent,
-    LandingPageTabletBodyComponent,
-    LandingPageMobileBodyComponent,
-    LandingPageFrameComponent,
-  ],
-  imports: [
-    CommonModule,
-    LandingPageRoutingModule
-  ]
+    declarations: [
+        LayoutComponent,
+        TopInfoComponent,
+        LandingPageHeaderComponent,
+        LandingPageDesktopBodyComponent,
+        LandingPageTabletBodyComponent,
+        LandingPageMobileBodyComponent,
+        LandingPageFrameComponent,
+        ThemeBarComponent,
+        LandingPageServiceSubjectComponent,
+        LandingPageServiceTopicComponent,
+        LandingPageServiceStyleComponent,
+        LandingPageServiceColorComponent,
+    ],
+    imports: [
+        CommonModule,
+        LandingPageRoutingModule,
+        MainSharedModule,
+        AuthModule
+    ]
 })
 export class LandingPageModule { }

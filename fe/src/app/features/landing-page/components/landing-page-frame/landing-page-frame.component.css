@@ -41,3 +41,36 @@
 .ar-43 {
     aspect-ratio: 4 / 3;
 }
+
+/* Extra Large screens and TV */
+@media (min-width: 1603px) {
+
+}
+
+/* Below Large screens and desktops [NORMAL SCREEN] */
+@media (max-width: 1602px) {
+
+}
+
+/* Below Average screen [SMALL SCREEN] */
+@media (max-width: 1333px) {
+    .frame-container {
+        width: 15%;
+        min-width: 180px;
+    }
+}
+
+/* Below small screen [TABLET] */
+@media (max-width: 1023px) {
+   
+}
+
+/* Below Tablets [LARGE PHONE] */
+@media (max-width: 739px) {
+    
+}
+
+/* Mobile normal to high resolution [SMALL PHONE] */
+@media (max-width: 480px) {
+
+}

@@ -4,8 +4,9 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: calc(100svh - var(--top-info-height) - var(--header-height));
+    justify-content: flex-start;
+    height: calc(100svh - var(--top-info-height) - var(--header-height) - 2.4svh);
+    gap: 18px;
 }
 
 .banner {
@@ -18,13 +19,6 @@
     border: 1px solid var(--dark-border-color);
     border-radius: var(--border-radius-2);
     background-image: url("https://firebasestorage.googleapis.com/v0/b/test-firebase-image-81d97.appspot.com/o/Screenshot%202024-02-20%20151404.png?alt=media&token=971da7be-cae5-4f25-95c6-146b484ac3b2");
-}
-
-.banner__overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background-color: var(--overlay-color);
 }
 
 .banner__left-side {
@@ -117,9 +111,13 @@
     transition: 0.3s ease;
 }
 
+.banner__right-side.dark-mode {
+    background-color: #151515;
+}
+
 .banner__right-side__frame-container {
     padding: 30px 0;
-    /* animation: landing-page-banner-right-side-bannermove 300s linear infinite; */
+    animation: landing-page-banner-right-side-bannermove 300s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,9 +130,48 @@
     display: contents;
 }
 
+.banner__right-side__frame-container.no-animation {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 .service {
+    padding: 15px 18px;
     width: 100%;
     height: var(--service-height);
     border: 1px solid var(--dark-border-color);
     border-radius: var(--border-radius-2);
+    display: flex;
+    flex-direction: column;
+}
+
+.service__header {
+    width: 100%;
+    padding-bottom: 9px;
+}
+
+.service__header__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.service__header__list__item {
+    padding-bottom: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.service__header__list__item.activated {
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.service__body {
+    flex: 1;
+    width: 100%;
+}
+
+.service__body .row>* {
+    display: contents;
 }

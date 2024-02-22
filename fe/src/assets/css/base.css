@@ -67,8 +67,8 @@ body {
     overflow-x: hidden;
 }
 
-.hh {
-    height: 47%;
+.fh {
+    height: 100%;
 }
 
 .gap-handle-landing-page {
@@ -91,6 +91,7 @@ body {
     --primary-color: #3e008a;
     --primary-color-lighter: #8932f3;
     --secondary-color: #c5b358;
+    --secondary-color-lighter: #c9bc7a;
     --danger-color: #a73131;
     --red-color: #d0312d;
 
@@ -115,6 +116,7 @@ body {
 
     /* Overlay color */
     --overlay-color: rgba(0, 0, 0, 0.72);
+    --overlay-color-light: rgba(15, 15, 15, 0.72);
 
     /* Form Color */
     --checkbox-border-color: #505050;

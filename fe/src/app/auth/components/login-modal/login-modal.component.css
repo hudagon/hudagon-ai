@@ -1,0 +1,132 @@
+.wrapper {
+    width: 100vw;
+    height: 100svh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.wrapper app-overlay {
+    z-index: 2;
+}
+
+.login-modal-container {
+    position: relative;
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--dark-border-color);
+    height: 510px;
+    width: 810px;
+    margin-bottom: 48px;
+    z-index: 3;
+    overflow: hidden;
+    display: flex;
+}
+
+.login-modal-container__left-side {
+    width: 45%;
+    height: 100%;
+    border-right: 1px solid var(--dark-border-color);
+    background: #15151552;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal-container__left-side__logo {
+    font-size: 60px;
+    margin-bottom: 81px;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    filter: drop-shadow(-3px 12px 14px #ffffff);
+}
+
+.login-modal-container__right-side {
+    height: 100%;
+    width: 55%;
+    background-color: var(--dark-panel-color);
+    padding: 30px;
+}
+
+.login-modal-container__right-side__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal-container__right-side__header__title {
+
+}
+
+.login-modal-container__right-side__body {
+
+}
+
+.login-modal-container__right-side__body__form-group {
+
+}
+
+.login-modal-container__right-side__body__form-group__control {
+
+}
+
+.login-modal-container__right-side__body__utilities {
+
+}
+
+.login-modal-container__right-side__body__utilities__forgot-password {
+
+}
+
+.login-modal-container__right-side__body__utilities__remember-me {
+
+}
+
+.login-modal-container__right-side__body__utilities__remember-me__form-group {
+
+}
+
+.login-modal-container__right-side__body__utilities__remember-me__form-group__control {
+
+}
+
+.login-modal-container__right-side__body__utilities__remember-me__text {
+
+}
+
+.login-modal-container__right-side__footer {
+
+}
+
+.login-modal-container__right-side__footer__divider {
+
+}
+
+.login-modal-container__right-side__footer__divider__line {
+
+}
+
+.login-modal-container__right-side__footer__divider__text {
+
+}
+
+.login-modal-container__right-side__footer__icon-group {
+
+}
+
+.login-modal-container__right-side__footer__register-cta {
+
+}
+
+.login-modal-container__right-side__footer__register-cta__text-1 {
+
+}
+
+.login-modal-container__right-side__footer__register-cta__text-2 {
+
+}
+
+

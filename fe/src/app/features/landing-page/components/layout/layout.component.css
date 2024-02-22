@@ -5,16 +5,23 @@
     max-height: 1200px !important;
     max-width: 2100px;
     min-width: 360px;
+    position: relative;
 
     /* Landing Page Height */
     --top-info-height: 3.6svh;
     --header-height: 7.6svh;
-    --banner-height: 51svh;
-    --service-height: 34.2svh;
+    --banner-height: 50svh;
+    --service-height: 33svh;
 }
 
 app-landing-page-desktop-body {
     width: 100%;
+}
+
+app-login-modal {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 999 !important;
 }
 
 /* Height responsive */
