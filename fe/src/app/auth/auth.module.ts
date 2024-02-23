@@ -20,7 +20,6 @@ import { MainSharedModule } from "../shareds/main-shared/main-shared.module";
         CommonModule,
         AuthRoutingModule,
         MainSharedModule,
-        MainSharedModule
     ],
     exports: [LoginModalComponent]
 })

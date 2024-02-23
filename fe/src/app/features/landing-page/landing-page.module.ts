@@ -14,7 +14,8 @@ import { LandingPageServiceSubjectComponent } from './components/landing-page-se
 import { LandingPageServiceTopicComponent } from './components/landing-page-service-topic/landing-page-service-topic.component';
 import { LandingPageServiceStyleComponent } from './components/landing-page-service-style/landing-page-service-style.component';
 import { LandingPageServiceColorComponent } from './components/landing-page-service-color/landing-page-service-color.component';
-import { AuthModule } from 'src/app/auth/auth.module';
+import { AuthModule } from "../../auth/auth.module";
+import { UserPanelComponent } from './components/landing-page-header/user-panel/user-panel.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +31,7 @@ import { AuthModule } from 'src/app/auth/auth.module';
         LandingPageServiceTopicComponent,
         LandingPageServiceStyleComponent,
         LandingPageServiceColorComponent,
+        UserPanelComponent,
     ],
     imports: [
         CommonModule,

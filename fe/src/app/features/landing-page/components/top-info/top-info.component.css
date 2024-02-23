@@ -36,8 +36,8 @@
 
 .top-info__contact-list__item {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-size: var(--fs-less-1);
     gap: 3px;
     height: 21px;
@@ -50,19 +50,6 @@
     align-items: center;
     display: flex;
     line-height: 8.1;
-}
-
-.top-info__contact-list__item i {
-    margin-right: 3px;
-    align-items: center;
-    display: flex;
-    font-size: 12px;
-    height: 100%;
-    margin-top: 1px;
-}
-
-.top-info__contact-list__item:first-child i {
-    margin-top: 3.9px !important;
 }
 
 .top-info__hamburger-bar-group {

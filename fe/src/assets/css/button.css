@@ -16,6 +16,11 @@
     background-color: var(--primary-color);
 }
 
+.btn.pr.outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-color)
+}
+
 .btn.sc {
     background-color: transparent;
     border: 1px solid var(--dark-border-color);

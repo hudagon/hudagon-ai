@@ -17,18 +17,15 @@
         <!-- LANDING PAGE BODY -->
         <div class="row">
             <app-landing-page-desktop-body
-                *ngIf="(viewportWidth > breakPointMap.get('TABLET')!)"></app-landing-page-desktop-body>
+                *ngIf="(getViewportWidth() > getBreakpointValues('TABLET')!)"></app-landing-page-desktop-body>
             <app-landing-page-tablet-body
-                *ngIf="(viewportWidth <= breakPointMap.get('TABLET')!) && (viewportWidth > breakPointMap.get('LARGE_PHONE')!)"></app-landing-page-tablet-body>
+                *ngIf="(getViewportWidth() <= getBreakpointValues('TABLET')!) && (getViewportWidth() > getBreakpointValues('LARGE_PHONE')!)"></app-landing-page-tablet-body>
             <app-landing-page-mobile-body
-                *ngIf="(viewportWidth <= breakPointMap.get('LARGE_PHONE')!)"></app-landing-page-mobile-body>
+                *ngIf="(getViewportWidth() <= getBreakpointValues('LARGE_PHONE')!)"></app-landing-page-mobile-body>
         </div>
 
-        <!-- <div style="z-index: 9999; position: fixed; inset: 0" *ngIf="isLoginModalOpen">
-            <div [ngComponentOutlet]="loginModalComponent"></div>
-        </div> -->
-
-        <app-login-modal></app-login-modal>
-
+        <div style="z-index: 9999; position: fixed; inset: 0;" *ngIf="isLoginModalOpen">
+            <app-login-modal (notifyToggleLoginModal)="handleToggleLoginModal()" ></app-login-modal>
+        </div>
     </div>
 </div>

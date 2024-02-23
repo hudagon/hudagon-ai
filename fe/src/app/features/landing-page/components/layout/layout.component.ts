@@ -1,5 +1,5 @@
-import { Component, HostListener, OnInit, Type } from '@angular/core';
-import { BreakpointsMap } from 'src/app/core/constants/breakPoints';
+import { Component, OnInit } from '@angular/core';
+import { MediaQueriesService } from 'src/app/core/services/media-queries.service';
 
 @Component({
   selector: 'app-layout',
@@ -8,39 +8,24 @@ import { BreakpointsMap } from 'src/app/core/constants/breakPoints';
 })
 export class LayoutComponent implements OnInit {
   isLoginModalOpen: boolean = false;
-  loginModalComponent: any;
 
-  breakPointMap: Map<string, number> = new Map();
-  viewportWidth: number = 0;
+  constructor(
+    private mediaQueriesService: MediaQueriesService
+  ) {
+  }
 
   ngOnInit(): void {
-    this.breakPointMap = BreakpointsMap;
-    this.setViewportBreakpoint(window.innerWidth);
-  }
- 
-  /*#region HANDLE CHANGING VIEWPORT SECTION */
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.setViewportBreakpoint(event.target.innerWidth);
   }
 
-  setViewportBreakpoint(width: number) {
-    this.viewportWidth = width;
-  }
-  /*#endregion*/
-
-  /*#region TOGGLE LOGIN MODAL SECTION */
   handleToggleLoginModal() {
     this.isLoginModalOpen = !this.isLoginModalOpen;
-    this.loadLoginModalComponent();
   }
 
-  async loadLoginModalComponent() {
-    if (!this.loginModalComponent) {
-      const { LoginModalComponent } = await import('../../../../auth/components/login-modal/login-modal.component');
-      this.loginModalComponent = LoginModalComponent;
-    }
+  getBreakpointValues(screen: string) {
+    return this.mediaQueriesService.breakPointMap.get(screen);
   }
-  /*#endregion*/
 
+  getViewportWidth() {
+    return this.mediaQueriesService.viewportWidth;
+  }
 }

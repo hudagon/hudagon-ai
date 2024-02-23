@@ -158,10 +158,6 @@
         width: 150px;
     }
 
-    .top-info__hamburger-bar-group {
-        display: flex;
-    }
-
     .landing-page-header__button-group {
         display: none;
     }
@@ -174,10 +170,6 @@
     }
 
     .list-page-wrapper__mobile-utilities {
-        display: flex;
-    }
-
-    .list-page-wrapper__right-side__content__header__hamburger-group {
         display: flex;
     }
 
@@ -259,17 +251,6 @@
         --fs-normal: 14px;
     }
 
-    .landing-page__responsive__tablet-hamburger-content-mobile {
-        display: flex;
-    }
-
-    .top-info__hamburger-bar-group {
-        display: none;
-    }
-
-    .top-info__hamburger-bar-group.mobile {
-        display: flex;
-    }
 
     .landing-page__responsive__mobile {
         display: block;

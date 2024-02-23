@@ -3,20 +3,12 @@
         LOGO
     </div>
 
-    <div class="landing-page-header__logo-responsive-group">
-        <span class="landing-page-header__logo-responsive-group__slash"></span>
-        <span class="landing-page-header__logo-responsive-group__logo">
-            LOGO
-        </span>
-        <span class="landing-page-header__logo-responsive-group__slash"></span>
+    <div *ngIf="!isLogged() && (getViewportWidth() > getBreakpointValues('TABLET')!)"  class="landing-page-header__button-group">
+        <button (click)="toggleLoginModal()" type="button" class="hover-effect-yellow-bright btn pr outline">
+            Đăng nhập
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
     </div>
 
-    <div class="landing-page-header__button-group">
-        <button (click)="toggleLoginModal()" type="button" class="hover-effect-yellow-bright landing-page-header__button-group__login btn">
-            Đăng nhập
-        </button>
-        <button type="button" class="hover-effect-yellow-bright btn pr">
-            Đăng ký ngay
-        </button>
-    </div>
+    <app-user-panel style="display: contents" *ngIf="isLogged()"></app-user-panel>
 </header>
