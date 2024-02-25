@@ -7,6 +7,8 @@ import { RegisterModalComponent } from './components/register-modal/register-mod
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { MainSharedModule } from "../shareds/main-shared/main-shared.module";
+import { GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
+import { GoogleLoginComponent } from './components/google-login/google-login.component';
 
 
 @NgModule({
@@ -14,12 +16,14 @@ import { MainSharedModule } from "../shareds/main-shared/main-shared.module";
         LoginModalComponent,
         RegisterModalComponent,
         RegisterPageComponent,
-        LoginPageComponent
+        LoginPageComponent,
+        GoogleLoginComponent
     ],
     imports: [
         CommonModule,
         AuthRoutingModule,
         MainSharedModule,
+        GoogleSigninButtonModule
     ],
     exports: [LoginModalComponent]
 })

@@ -5,3 +5,7 @@
 @import url("assets/css/button.css");
 @import url("assets/css/animations.css");
 @import url("assets/css/input.css");
+
+#credential_picker_container {
+    display: none;
+}

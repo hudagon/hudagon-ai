@@ -98,3 +98,10 @@
 .hamburger-toggle #bar3-mobile {
     transform: translateY(-6px) rotateZ(45deg);
 }
+
+/* Below small screen [TABLET] */
+@media (max-width: 1023px) {
+    .top-info {
+        padding: 9px 18px;
+    }
+} 

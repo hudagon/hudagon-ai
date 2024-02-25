@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { FacebookLoginProvider, SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -6,47 +7,34 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './login-modal.component.html',
   styleUrls: ['./login-modal.component.css']
 })
-export class LoginModalComponent {
+export class LoginModalComponent implements OnInit {
   @Output() notifyToggleLoginModal = new EventEmitter();
+  user: SocialUser | undefined;
 
   constructor(
-    private authService: AuthService
+    private authService: AuthService,
+    private socialAuthService: SocialAuthService
   ) {}
+
+  ngOnInit(): void {
+    this.socialAuthService.authState.subscribe((user) => {
+      this.user = user;
+      if (user) {
+        this.authService.login(user);
+        this.handleToggleModal();
+      }
+    });
+  }
 
   handleToggleModal() {
     this.notifyToggleLoginModal.emit();
   }
 
-  login(socialMedia: string) {
-    switch (socialMedia) {
-      case 'facebook':
-        this.loginWithFacebook();
-        break;
-      case 'google':
-        this.loginWithGoogle();
-        break;
-      case 'zalo':
-        this.loginWithZalo();
-        break;
-    }
-  }
-
-  loginWithGoogle() {
-    this.afterSuccessLogin();
-    this.authService.updateLoginToken('haha');
-  }
-
-  loginWithZalo() {
-    this.afterSuccessLogin();
-    this.authService.updateLoginToken('haha');
-  }
-
-  loginWithFacebook() {
-    this.afterSuccessLogin();
-    this.authService.updateLoginToken('haha');
-  }
-
   afterSuccessLogin() {
     this.handleToggleModal();
+  }
+
+  googleSignIn(googleWrapper: any) {
+    googleWrapper.click();
   }
 }

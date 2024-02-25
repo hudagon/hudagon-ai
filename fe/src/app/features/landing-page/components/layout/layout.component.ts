@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { MediaQueriesService } from 'src/app/core/services/media-queries.service';
 
 @Component({
@@ -10,7 +10,8 @@ export class LayoutComponent implements OnInit {
   isLoginModalOpen: boolean = false;
 
   constructor(
-    private mediaQueriesService: MediaQueriesService
+    private mediaQueriesService: MediaQueriesService,
+    private changeDectector: ChangeDetectorRef
   ) {
   }
 
@@ -19,6 +20,7 @@ export class LayoutComponent implements OnInit {
 
   handleToggleLoginModal() {
     this.isLoginModalOpen = !this.isLoginModalOpen;
+    this.changeDectector.markForCheck();
   }
 
   getBreakpointValues(screen: string) {

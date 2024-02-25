@@ -10,22 +10,20 @@
         <!-- LANDING PAGE HEADER -->
         <div class="row">
             <div class="col c-12">
-                <app-landing-page-header (notifyToggleLoginModal)="handleToggleLoginModal()"></app-landing-page-header>
+                <app-landing-page-header style="display: contents" (notifyToggleLoginModal)="handleToggleLoginModal()"></app-landing-page-header>
             </div>
         </div>
 
         <!-- LANDING PAGE BODY -->
         <div class="row">
             <app-landing-page-desktop-body
-                *ngIf="(getViewportWidth() > getBreakpointValues('TABLET')!)"></app-landing-page-desktop-body>
+                style="display: contents" *ngIf="(getViewportWidth() > getBreakpointValues('TABLET')!)"></app-landing-page-desktop-body>
             <app-landing-page-tablet-body
-                *ngIf="(getViewportWidth() <= getBreakpointValues('TABLET')!) && (getViewportWidth() > getBreakpointValues('LARGE_PHONE')!)"></app-landing-page-tablet-body>
+                style="display: contents" *ngIf="(getViewportWidth() <= getBreakpointValues('TABLET')!) && (getViewportWidth() > getBreakpointValues('LARGE_PHONE')!)"></app-landing-page-tablet-body>
             <app-landing-page-mobile-body
-                *ngIf="(getViewportWidth() <= getBreakpointValues('LARGE_PHONE')!)"></app-landing-page-mobile-body>
+                style="display: contents" *ngIf="(getViewportWidth() <= getBreakpointValues('LARGE_PHONE')!)"></app-landing-page-mobile-body>
         </div>
 
-        <div style="z-index: 9999; position: fixed; inset: 0;" *ngIf="isLoginModalOpen">
-            <app-login-modal (notifyToggleLoginModal)="handleToggleLoginModal()" ></app-login-modal>
-        </div>
+        <app-login-modal *ngIf="isLoginModalOpen" (notifyToggleLoginModal)="handleToggleLoginModal()"></app-login-modal>
     </div>
 </div>

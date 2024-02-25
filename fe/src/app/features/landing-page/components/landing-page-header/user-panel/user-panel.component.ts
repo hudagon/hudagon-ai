@@ -9,11 +9,19 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 export class UserPanelComponent {
 
   constructor(
-    private authService: AuthService
+    private authService: AuthService,
   ) {
   }
 
   logOut() {
     this.authService.logOut();
+  }
+
+  getUserFullName() {
+    return this.authService.getUserFullName();
+  }
+
+  getUserAvatar() {
+    return this.authService.getUserAvatar();
   }
 }

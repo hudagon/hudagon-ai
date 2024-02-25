@@ -16,8 +16,8 @@
     position: relative;
     border-radius: var(--border-radius-2);
     border: 1px solid var(--dark-border-color);
-    height: 240px;
-    width: 720px;
+    height: 180px;
+    width: 600px;
     margin-bottom: 15svh;
     z-index: 3;
     display: flex;
@@ -96,11 +96,22 @@
     align-items: center;
 }
 
+.login-modal-container__right-side__body__choice.zalo {
+    opacity: 0.3;
+}
+
 .login-modal-container__right-side__body__choice__text {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+    gap: 3px;
+    user-select: none;
+}
+
+.login-modal-container__right-side__body__choice__text span {
+    opacity: 0.81;
+    font-size: var(--fs-less-1);
 }
 
 .login-modal-container__right-side__body__choice__icon-group {

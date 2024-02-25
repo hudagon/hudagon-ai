@@ -19,28 +19,14 @@
             </div>
 
             <section class="login-modal-container__right-side__body">
-                <div (click)="login('facebook')" class="hover-effect-silver-border login-modal-container__right-side__body__choice">
-                    <div class="login-modal-container__right-side__body__choice__icon-group facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                    <p class="login-modal-container__right-side__body__choice__text">
-                        Thông qua Facebook
-                    </p>
-                </div>
-                <div (click)="login('google')" class="hover-effect-silver-border login-modal-container__right-side__body__choice">
-                    <div class="login-modal-container__right-side__body__choice__icon-group google">
-                        <i class="fa-brands fa-google"></i>
-                    </div>
-                    <p class="login-modal-container__right-side__body__choice__text">
-                        Thông qua Google
-                    </p>
-                </div>
-                <div (click)="login('zalo')" class="hover-effect-silver-border login-modal-container__right-side__body__choice">
+                <app-google-login style="display: contents" (notifyLoginWithGoogle)="googleSignIn($event)" ></app-google-login>
+                <div class="login-modal-container__right-side__body__choice zalo">
                     <div class="login-modal-container__right-side__body__choice__icon-group zalo">
                         <i class="fa-solid fa-z"></i>
                     </div>
                     <p class="login-modal-container__right-side__body__choice__text">
                         Thông qua Zalo
+                        <span>(Chưa khả dụng)</span>
                     </p>
                 </div>
             </section>
