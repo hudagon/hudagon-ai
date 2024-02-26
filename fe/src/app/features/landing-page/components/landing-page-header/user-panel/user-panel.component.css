@@ -7,10 +7,6 @@
     position: relative;
 }
 
-.user-name {
-    user-select: none;
-}
-
 .user-avatar {
     width: 45px;
     aspect-ratio: 1/1;

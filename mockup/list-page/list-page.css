@@ -281,7 +281,7 @@
     flex-direction: column;
     overflow-x: hidden;
     margin-bottom: 12px;
-    scrollbar-gutter: stable both-edges;
+    /* scrollbar-gutter: stable both-edges; */
 }
 
 .list-page-wrapper__right-side__content__filter-bar__body__accordion-group {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MediaQueriesService } from 'src/app/core/services/media-queries.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { MediaQueriesService } from 'src/app/core/services/media-queries.service
   styleUrls: ['./top-info.component.css']
 })
 export class TopInfoComponent implements OnInit {
+  @Output() notifyToggleTabletHamburger = new EventEmitter();
 
   constructor(
     private mediaQueriesService: MediaQueriesService
@@ -22,5 +23,9 @@ export class TopInfoComponent implements OnInit {
 
   getBreakpointValues(screen: string) {
     return this.mediaQueriesService.breakPointMap.get(screen);
+  }
+
+  handleToggleTabletHamurber() {
+    this.notifyToggleTabletHamburger.emit();
   }
 }

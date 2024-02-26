@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { MainSharedService } from '../../main-shared.service';
 
 @Component({
   selector: 'app-hamburger',
@@ -6,19 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hamburger.component.css']
 })
 export class HamburgerComponent implements OnInit {
-  bar1: any | undefined;
-  bar2: any | undefined;
-  bar3: any | undefined;
+  @Output() notifyToggleTabletHamburger = new EventEmitter();
+
+  constructor(
+    private mainSharedService: MainSharedService
+  ) {
+  }
   
   ngOnInit(): void {
-    this.bar1 = document.getElementById("bar1")
-    this.bar2 = document.getElementById("bar2")
-    this.bar3 = document.getElementById("bar3")
+  }
+
+  isHamburgerToggle() {
+    return this.mainSharedService.isHamburgerToggled;
   }
   
   toggleHamburger() {
-    this.bar1.classList.toggle("toggle");
-    this.bar2.classList.toggle("toggle");
-    this.bar3.classList.toggle("toggle");
+    this.mainSharedService.isHamburgerToggled = !this.mainSharedService.isHamburgerToggled;
+    this.notifyToggleTabletHamburger.emit();
   }
 }

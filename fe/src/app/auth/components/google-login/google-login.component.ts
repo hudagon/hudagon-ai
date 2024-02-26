@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 declare global {
   interface Window {
@@ -11,8 +11,13 @@ declare global {
   templateUrl: './google-login.component.html',
   styleUrls: ['./google-login.component.css']
 })
-export class GoogleLoginComponent {
+export class GoogleLoginComponent implements OnInit {
   @Output() notifyLoginWithGoogle: EventEmitter<any> = new EventEmitter<any>();
+  @Input() template: string | undefined;
+
+  ngOnInit(): void {
+    
+  }
 
   createFakeGoogleWrapper = () => {
     const googleLoginWrapper = document.createElement("div");
@@ -39,5 +44,4 @@ export class GoogleLoginComponent {
   handleGoogleLogin() {
     this.notifyLoginWithGoogle.emit(this.createFakeGoogleWrapper());
   }
-
 }

@@ -45,28 +45,32 @@
     <section class="service">
         <header class="service__header">
             <ul class="service__header__list">
-                <li (click)="showServiceCategory('subject')" [ngClass]="{'activated' : currentServiceCategory == 'subject'}" class="hover-effect-yellow-bright service__header__list__item">
+                <li (click)="showServiceCategory('subject')"
+                    [ngClass]="{'activated' : currentServiceCategory == 'subject'}"
+                    class="hover-effect-yellow-bright service__header__list__item">
                     Chủ thể
                 </li>
-                <li (click)="showServiceCategory('topic')" [ngClass]="{'activated' : currentServiceCategory == 'topic'}" class="hover-effect-yellow-bright service__header__list__item">
+                <li (click)="showServiceCategory('topic')" [ngClass]="{'activated' : currentServiceCategory == 'topic'}"
+                    class="hover-effect-yellow-bright service__header__list__item">
                     Chủ đề
                 </li>
-                <li (click)="showServiceCategory('style')" [ngClass]="{'activated' : currentServiceCategory == 'style'}" class="hover-effect-yellow-bright service__header__list__item">
+                <li (click)="showServiceCategory('style')" [ngClass]="{'activated' : currentServiceCategory == 'style'}"
+                    class="hover-effect-yellow-bright service__header__list__item">
                     Phong cách
                 </li>
-                <li (click)="showServiceCategory('color')" [ngClass]="{'activated' : currentServiceCategory == 'color'}" class="hover-effect-yellow-bright service__header__list__item">
+                <li (click)="showServiceCategory('color')" [ngClass]="{'activated' : currentServiceCategory == 'color'}"
+                    class="hover-effect-yellow-bright service__header__list__item">
                     Màu
                 </li>
             </ul>
         </header>
 
         <div class="service__body">
-            <div class="row fh">
-                <app-landing-page-service-subject *ngIf="currentServiceCategory == 'subject'"></app-landing-page-service-subject>                
-                <app-landing-page-service-topic *ngIf="currentServiceCategory == 'topic'"></app-landing-page-service-topic>                
-                <app-landing-page-service-style *ngIf="currentServiceCategory == 'style'"></app-landing-page-service-style>                
-                <app-landing-page-service-color *ngIf="currentServiceCategory == 'color'"></app-landing-page-service-color>                
-            </div>
+            <app-landing-page-service-subject
+                style="display: contents" *ngIf="currentServiceCategory == 'subject'"></app-landing-page-service-subject>
+            <app-landing-page-service-topic style="display: contents" *ngIf="currentServiceCategory == 'topic'"></app-landing-page-service-topic>
+            <app-landing-page-service-style style="display: contents" *ngIf="currentServiceCategory == 'style'"></app-landing-page-service-style>
+            <app-landing-page-service-color style="display: contents" *ngIf="currentServiceCategory == 'color'"></app-landing-page-service-color>
         </div>
     </section>
 </div>

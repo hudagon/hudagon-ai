@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { MediaQueriesService } from 'src/app/core/services/media-queries.service';
+import { MainSharedService } from 'src/app/shareds/main-shared/main-shared.service';
 
 @Component({
   selector: 'app-layout',
@@ -8,10 +9,12 @@ import { MediaQueriesService } from 'src/app/core/services/media-queries.service
 })
 export class LayoutComponent implements OnInit {
   isLoginModalOpen: boolean = false;
+  isTabletHamburgerOpen: boolean = false;
 
   constructor(
     private mediaQueriesService: MediaQueriesService,
-    private changeDectector: ChangeDetectorRef
+    private changeDectector: ChangeDetectorRef,
+    private mainSharedService: MainSharedService
   ) {
   }
 
@@ -29,5 +32,16 @@ export class LayoutComponent implements OnInit {
 
   getViewportWidth() {
     return this.mediaQueriesService.viewportWidth;
+  }
+
+  handleToggleTabletHamburber() {
+    this.isTabletHamburgerOpen = !this.isTabletHamburgerOpen;
+    this.changeDectector.markForCheck();
+  }
+
+  handleToggleHamburgerContent() {
+    this.isTabletHamburgerOpen = !this.isTabletHamburgerOpen;
+    this.mainSharedService.isHamburgerToggled = !this.mainSharedService.isHamburgerToggled;
+    this.changeDectector.markForCheck();
   }
 }

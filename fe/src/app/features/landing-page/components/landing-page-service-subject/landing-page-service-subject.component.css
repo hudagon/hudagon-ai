@@ -76,3 +76,12 @@
 .service__body__category.clickbait {
     cursor: auto;
 }
+
+/* Below small screen [TABLET] */
+@media (max-width: 1023px) {
+    .service__body__category {
+        width: 49%;
+        height: 47%;
+    }
+}
+

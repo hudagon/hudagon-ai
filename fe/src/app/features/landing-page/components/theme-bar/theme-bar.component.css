@@ -81,6 +81,11 @@
     border-color: var(--dark-border-color);
 }
 
-
-
+/* Below small screen [TABLET] */
+@media (max-width: 1023px) {
+    .landing-page__theme-bar__wrapper {
+        bottom: 9px;
+        right: 9px;
+    }
+}
 

@@ -25,6 +25,6 @@ import { GoogleLoginComponent } from './components/google-login/google-login.com
         MainSharedModule,
         GoogleSigninButtonModule
     ],
-    exports: [LoginModalComponent]
+    exports: [LoginModalComponent, GoogleLoginComponent]
 })
 export class AuthModule { }

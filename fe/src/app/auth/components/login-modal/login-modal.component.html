@@ -19,7 +19,7 @@
             </div>
 
             <section class="login-modal-container__right-side__body">
-                <app-google-login style="display: contents" (notifyLoginWithGoogle)="googleSignIn($event)" ></app-google-login>
+                <app-google-login [template]="'LOGIN_MODAL'" style="display: contents" (notifyLoginWithGoogle)="googleSignIn($event)"></app-google-login>
                 <div class="login-modal-container__right-side__body__choice zalo">
                     <div class="login-modal-container__right-side__body__choice__icon-group zalo">
                         <i class="fa-solid fa-z"></i>

@@ -9,14 +9,24 @@
     height: var(--top-info-height);
 }
 
-.top-info>* {
-    flex: 1;
-}
-
-.top-info__slogan {
+.top-info__term-and-policies {
     display: flex;
     align-items: center;
+    gap: 9px;
+}
+
+.top-info__term-and-policies i {
+    font-size: var(--fs-less-3);
+    color: var(--secondary-color);
+}
+
+.top-info__term-and-policies__text {
     font-size: var(--fs-less-1);
+}
+
+
+.top-info>* {
+    flex: 1;
 }
 
 .top-info__social-media-list {
@@ -103,5 +113,6 @@
 @media (max-width: 1023px) {
     .top-info {
         padding: 9px 18px;
+        flex-direction: row-reverse;
     }
 } 

@@ -33,12 +33,16 @@ import { AuthModule } from '../auth/auth.module';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '250002758220-anllmnhi12nncdik3a0enj5c1v3283pq.apps.googleusercontent.com'
+              '250002758220-anllmnhi12nncdik3a0enj5c1v3283pq.apps.googleusercontent.com',
+              {
+                oneTapEnabled: false
+              }
             )
           }
         ],
         onError: (err) => {
           console.error(err);
+          alert("Tính năng đăng nhập đang bị lỗi, bạn hoàn toàn có thể mua hàng mà không cần đăng nhập. Xin Lỗi vì sự bất tiện này");
         }
       } as SocialAuthServiceConfig,
     }

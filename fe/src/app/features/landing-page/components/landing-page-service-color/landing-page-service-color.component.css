@@ -1,5 +1,5 @@
 .service__body__category {
-    width: 100%;
+    width: 24%;
     border: 1px solid var(--dark-border-color);
     border-radius: var(--border-radius-1);
     height: 100%;
@@ -75,4 +75,12 @@
 
 .service__body__category.clickbait {
     cursor: auto;
+}
+
+/* Below small screen [TABLET] */
+@media (max-width: 1023px) {
+    .service__body__category {
+        width: 49%;
+        height: 47%;
+    }
 }

@@ -8,6 +8,7 @@ html {
 }
 
 * {
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -141,6 +142,7 @@ body {
     --font-secondary: 'EB Garamond', serif;
 
     /* Font Size */
+    --fs-less-3: calc(var(--fs-normal) - 9px);
     --fs-less-2: calc(var(--fs-normal) - 6px);
     --fs-less-1: calc(var(--fs-normal) - 3px);
     --fs-normal: 18px;

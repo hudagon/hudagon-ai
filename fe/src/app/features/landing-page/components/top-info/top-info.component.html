@@ -1,7 +1,13 @@
 <div class="top-info">
-    <p class="top-info__slogan">
-        Slogan...
-    </p>
+    <div *ngIf="(getViewportWidth() > getBreakpointValues('TABLET')!)" class="top-info__term-and-policies">
+        <span class="hover-effect-yellow-bright top-info__term-and-policies__text">
+            Điều khoản
+        </span>
+        <i class="fa-solid fa-diamond"></i>
+        <span class="hover-effect-yellow-bright top-info__term-and-policies__text">
+            Chính sách
+        </span>
+    </div>
 
     <ul *ngIf="(getViewportWidth() > getBreakpointValues('TABLET')!)" class="top-info__social-media-list">
         <li class="top-info__social-media-list__item hover-effect-yellow-bright">
@@ -31,5 +37,5 @@
         </li>
     </ul>
 
-    <app-hamburger style="display: contents" *ngIf="(getViewportWidth() <= getBreakpointValues('TABLET')!)"></app-hamburger>
+    <app-hamburger (notifyToggleTabletHamburger)="handleToggleTabletHamurber()" style="display: contents" *ngIf="(getViewportWidth() <= getBreakpointValues('TABLET')!)"></app-hamburger>
 </div>

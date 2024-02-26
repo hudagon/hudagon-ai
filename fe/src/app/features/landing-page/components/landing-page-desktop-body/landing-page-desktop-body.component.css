@@ -171,6 +171,10 @@
 .service__body {
     flex: 1;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .service__body .row>* {

@@ -16,6 +16,7 @@ import { LandingPageServiceStyleComponent } from './components/landing-page-serv
 import { LandingPageServiceColorComponent } from './components/landing-page-service-color/landing-page-service-color.component';
 import { AuthModule } from "../../auth/auth.module";
 import { UserPanelComponent } from './components/landing-page-header/user-panel/user-panel.component';
+import { LandingPageTabletHamburgerContentComponent } from './components/layout/landing-page-tablet-hamburger-content/landing-page-tablet-hamburger-content.component';
 
 @NgModule({
     declarations: [
@@ -32,6 +33,7 @@ import { UserPanelComponent } from './components/landing-page-header/user-panel/
         LandingPageServiceStyleComponent,
         LandingPageServiceColorComponent,
         UserPanelComponent,
+        LandingPageTabletHamburgerContentComponent,
     ],
     imports: [
         CommonModule,

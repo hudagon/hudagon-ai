@@ -3,9 +3,12 @@
         <!-- TOP INFO -->
         <div class="row">
             <div class="col c-12">
-                <app-top-info></app-top-info>
+                <app-top-info (notifyToggleTabletHamburger)="handleToggleTabletHamburber()"></app-top-info>
             </div>
         </div>
+
+        <app-landing-page-tablet-hamburger-content (notifyToggleHamburgerContent)="handleToggleHamburgerContent()" 
+        *ngIf="isTabletHamburgerOpen && ((getViewportWidth() <= getBreakpointValues('TABLET')!))" style="display: contents;"></app-landing-page-tablet-hamburger-content>
 
         <!-- LANDING PAGE HEADER -->
         <div class="row">
