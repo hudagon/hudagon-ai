@@ -1,0 +1,43 @@
+<div class="right-side__inside">
+    <header class="right-side__inside__header">
+        <div class="right-side__inside__header__search-group">
+            <input (keyup.enter)="search()" id="searchInput" tabindex="1" type="text" placeholder="Tìm tranh..."
+                class="round right-side__inside__header__search-group__search-bar">
+            <i class="hover-effect-yellow-bright fa-solid fa-xmark"></i>
+            <i (keyup.enter)="search()" tabindex="2" class="hover-effect-yellow-bright fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="right-side__inside__header__user-group">
+            <div (mouseover)="loadDesktopCartDropDown()" class="right-side__inside__header__user-group__cart-group">
+                <i class="hover-effect-yellow-bright fa-solid fa-cart-shopping"></i>
+                <span class="right-side__inside__header__user-group__cart-group__amount">
+                    0
+                </span>
+
+                <div class="right-side__inside__header__user-group__cart-group__dropdown">
+                    <ng-template #desktopCartDropDown></ng-template>
+                </div>
+            </div>
+
+            <div (click)="toggleLoginModal()" *ngIf="!isLogged()" class="right-side__inside__header__user-group__login-group">
+                <i class="hover-effect-yellow-bright fa-solid fa-arrow-right-to-bracket"></i>
+            </div>
+
+            <app-user-panel *ngIf="isLogged()"></app-user-panel>
+        </div>
+    </header>
+
+    <section class="right-side__inside__body">
+        <div class="right-side__inside__body__search-utilities">
+            <div class="right-side__inside__body__search-utilities__summary">
+                <span class="right-side__inside__body__search-utilities__summary__results-count">
+                    12345 kết quả
+                </span>
+            </div>
+
+            <div class="right-side__inside__body__search-utilities__sort">
+
+            </div>
+        </div>
+    </section>
+</div>

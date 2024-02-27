@@ -1,7 +1,8 @@
 .wrapper {
     position: fixed;
     z-index: 999;
-    top: calc(var(--top-info-height) + 8px);
+    /* margin-top: var(--top-info-height); */
+    /* top: var(--top-info-height); */
     width: 100vw;
     min-width: 360px;
     height: calc(100svh - var(--top-info-height));

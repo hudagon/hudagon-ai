@@ -8,8 +8,12 @@ input[type="text"], input[type="password"] {
     transition: 0.3s ease-in-out;
 }
 
+input[type="text"].round {
+    border-radius: 21px;
+}
+
 input:focus {
-    border-color: var(--secondary-color-lighter);
+    border-color: var(--light-border-color);
     outline: none;
 }
 

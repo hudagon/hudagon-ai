@@ -341,7 +341,7 @@ input[type="text"].no-border {
 }
 
 .painting-tag input {
-    scale: 0.9;
+    /* scale: 0.9; */
     margin-top: 1.2px;
 }
 
@@ -554,7 +554,7 @@ input[type="text"].no-border {
     -moz-box-shadow: 1px 1px 14px -6px var(--dark-scrollbar-thumb);
     box-shadow: 1px 1px 14px -6px var(--dark-scrollbar-thumb);
     color: var(--secondary-color);
-    scale: 1.005;
+    /* scale: 1.005; */
 }
 
 /*#endregion*/

@@ -111,7 +111,7 @@ body {
     --red-color: #d0312d;
 
     --dark-border-color: #282b28;
-    --light-border-color: #8f8f8f61;
+    --light-border-color: #c2c2c261;
     --dark-level2-border-color: #393b39;
 
     --dark-glass-blur: hsla(0, 0%, 7%, 0.695);
@@ -184,13 +184,13 @@ body {
 }
 
 .hover-effect-yellow-bright:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
     filter: brightness(1.2);
 }
 
 .hover-effect-silver-border:hover {
     border-color: var(--light-border-color);
-    filter: brightness(1.17);
+    filter: brightness(1.35);
 }
 
 .hover-effect-2:hover {

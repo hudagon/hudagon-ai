@@ -17,7 +17,7 @@
 
 .top-info__term-and-policies i {
     font-size: var(--fs-less-3);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .top-info__term-and-policies__text {

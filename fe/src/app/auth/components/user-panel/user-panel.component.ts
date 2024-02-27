@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthService } from 'src/app/auth/services/auth.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-user-panel',
@@ -7,7 +7,7 @@ import { AuthService } from 'src/app/auth/services/auth.service';
   styleUrls: ['./user-panel.component.css']
 })
 export class UserPanelComponent {
-
+  
   constructor(
     private authService: AuthService,
   ) {

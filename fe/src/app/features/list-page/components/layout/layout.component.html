@@ -1,1 +1,17 @@
-<p>list-page layout works!</p>
+<div *ngIf="isContentLoaded" class="wrapper">
+    <div class="left-side">
+        <app-list-page-desktop-side-bar style="display: contents"
+            *ngIf="(getViewportWidth() > getBreakpointValues('TABLET')!)"></app-list-page-desktop-side-bar>
+        <app-list-page-tablet-side-bar style="display: contents"
+            *ngIf="(getViewportWidth() <= getBreakpointValues('TABLET')!) && (getViewportWidth() > getBreakpointValues('LARGE_PHONE')!)"></app-list-page-tablet-side-bar>
+    </div>
+
+    <div class="right-side">
+        <app-list-page-desktop-body (notifyToggleLoginModal)="handleToggleLoginModal()" style="display: contents"
+            *ngIf="(getViewportWidth() > getBreakpointValues('TABLET')!)"></app-list-page-desktop-body>
+    </div>
+
+    <app-login-modal style="display: contents" *ngIf="isLoginModalOpen" (notifyToggleLoginModal)="handleToggleLoginModal()"></app-login-modal>
+</div>
+
+<app-spinner [spinnerSize]="'lg'" *ngIf="!isContentLoaded"></app-spinner>

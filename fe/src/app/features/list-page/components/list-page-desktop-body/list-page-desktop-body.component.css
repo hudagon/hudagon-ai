@@ -1,0 +1,106 @@
+.right-side__inside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--dark-border-color);
+    border-radius: var(--border-radius-2);
+}
+
+.right-side__inside__header {
+    width: 100%;
+    min-height: 60px;
+    padding: 9px;
+    border-bottom: 1px solid var(--dark-border-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.right-side__inside__header__search-group {
+    grid-area: 1 / 2 / span 1 / span 1;
+    display: flex;
+    width: 360px;
+    align-items: center;
+    position: relative;
+}
+
+.right-side__inside__header__search-group i {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.fa-magnifying-glass:focus {
+    color: var(--secondary-color);
+}
+
+.fa-xmark {
+    margin-right: 30px;
+}
+
+.right-side__inside__header__search-group__search-bar {
+    padding: 9px 18px;
+    padding-right: 60px;
+}
+
+.right-side__inside__header__user-group {
+    grid-area: 1 / 3 / span 1 / span 1;
+    height: 100%;
+    width: 100px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 21px;
+}
+
+.right-side__inside__header__user-group__cart-group {
+    position: relative;
+}
+
+.right-side__inside__header__user-group__cart-group__amount {
+    font-size: var(--fs-less-1);
+    color: white;
+    background-color: #da1814d0;
+    position: absolute;
+    padding: 0 3px;
+    padding-right: 4px;
+    border-radius: 9px;
+    bottom: -6px;
+    left: -6px;
+}
+
+.right-side__inside__header__user-group__cart-group__dropdown {
+    position: absolute;
+    top: 24px;
+    right: 6px;
+    min-width: 210px;
+    min-height: 90px;
+    border: 1px solid var(--dark-border-color);
+    background-color: var(--dark-panel-color);
+    z-index: 3;
+    border-radius: var(--border-radius-2);
+    display: none;
+}
+
+.right-side__inside__header__user-group__cart-group__dropdown::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: -6px;
+    width: 66px;
+    height: 12px;
+    background-color: transparent;
+}
+
+.right-side__inside__header__user-group__cart-group:hover .right-side__inside__header__user-group__cart-group__dropdown {
+    display: flex;
+}
+
+.right-side__inside__header__user-group__login-group {
+
+}
+

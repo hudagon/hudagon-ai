@@ -65,7 +65,7 @@
     align-items: center;
     flex-direction: column;
     gap: 4.5px;
-    font-size: var(--fs-larger-2);
+    font-size: var(--fs-larger-1);
 }
 
 .service__body__category__text-group__content p {
