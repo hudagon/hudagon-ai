@@ -22,8 +22,8 @@
             <div (click)="toggleLoginModal()" *ngIf="!isLogged()" class="right-side__inside__header__user-group__login-group">
                 <i class="hover-effect-yellow-bright fa-solid fa-arrow-right-to-bracket"></i>
             </div>
-
-            <app-user-panel *ngIf="isLogged()"></app-user-panel>
+    
+            <app-user-panel [page]="'list'" *ngIf="isLogged()"></app-user-panel>
         </div>
     </header>
 

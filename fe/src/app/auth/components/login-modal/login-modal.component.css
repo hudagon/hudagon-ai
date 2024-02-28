@@ -42,6 +42,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: var(--border-radius-2);
+    border-bottom-left-radius: var(--border-radius-2);
 }
 
 .login-modal-container__left-side__logo {
@@ -59,6 +61,8 @@
     padding: 18px;
     display: flex;
     flex-direction: column;
+    border-top-right-radius: var(--border-radius-2);
+    border-bottom-right-radius: var(--border-radius-2);
 }
 
 .login-modal-container__right-side__header {

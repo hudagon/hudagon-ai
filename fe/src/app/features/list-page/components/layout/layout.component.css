@@ -7,17 +7,17 @@
 }
 
 .left-side, .right-side {
-    padding: 6px;
+    padding: 4.5px;
 }
 
 .left-side {
-    width: 18%;
-    min-width: 300px;
+    width: 15%;
+    min-width: 291px;
     height: 100%;
 }
 
 .right-side {
-    width: 82%;
+    width: 85%;
     height: 100%;
 }
 

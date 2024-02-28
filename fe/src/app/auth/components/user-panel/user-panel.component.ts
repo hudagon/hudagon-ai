@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./user-panel.component.css']
 })
 export class UserPanelComponent {
+  @Input() page: string = "";
   
   constructor(
     private authService: AuthService,

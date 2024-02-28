@@ -16,6 +16,10 @@
     border: 1px solid var(--dark-border-color);
 }
 
+.user-avatar.list {
+    width: 39px;
+}
+
 .dropdown {
     position: absolute;
     z-index: 9;
@@ -31,6 +35,10 @@
     opacity: 0;
     pointer-events: none;
     transition: 0.3s ease-in-out;
+}
+
+.dropdown.list {
+    top: 108%;
 }
 
 .dropdown::after {
