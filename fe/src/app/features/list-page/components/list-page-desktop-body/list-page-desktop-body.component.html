@@ -3,8 +3,8 @@
         <div class="right-side__inside__header__search-group">
             <input (keyup.enter)="search()" id="searchInput" tabindex="1" type="text" placeholder="Tìm tranh..."
                 class="round right-side__inside__header__search-group__search-bar">
-            <i class="hover-effect-yellow-bright fa-solid fa-xmark"></i>
-            <i (keyup.enter)="search()" tabindex="2" class="hover-effect-yellow-bright fa-solid fa-magnifying-glass"></i>
+            <i  tabindex="2" class="hover-effect-yellow-bright fa-solid fa-xmark"></i>
+            <i (keyup.enter)="search()" tabindex="3" class="hover-effect-yellow-bright fa-solid fa-magnifying-glass"></i>
         </div>
 
         <div class="right-side__inside__header__user-group">
@@ -30,13 +30,61 @@
     <section class="right-side__inside__body">
         <div class="right-side__inside__body__search-utilities">
             <div class="right-side__inside__body__search-utilities__summary">
-                <span class="right-side__inside__body__search-utilities__summary__results-count">
-                    12345 kết quả
-                </span>
+                <ul class="right-side__inside__body__search-utilities__summary__category-tag-group">
+                    <span class="right-side__inside__body__search-utilities__summary__results-count">
+                        <span>12345</span> kết quả cho
+                    </span>
+                    <li class="hover-effect-danger right-side__inside__body__search-utilities__summary__category-tag-group__item">
+                        <app-category-tag [categoryTagName]="'&quot;Con mèo mà trèo cây cau...&quot;'" style="display: contents"></app-category-tag>
+                    </li>
+                    <li class="hover-effect-danger right-side__inside__body__search-utilities__summary__category-tag-group__item">
+                        <app-category-tag [categoryTagName]="'Con người'" style="display: contents"></app-category-tag>
+                    </li>
+                    <li class="hover-effect-danger right-side__inside__body__search-utilities__summary__category-tag-group__item">
+                        <app-category-tag [categoryTagName]="'Phong cảnh'" style="display: contents"></app-category-tag>
+                    </li>
+                    <li class="hover-effect-danger right-side__inside__body__search-utilities__summary__category-tag-group__item">
+                        <app-category-tag [categoryTagName]="'Phong cảnh'" style="display: contents"></app-category-tag>
+                    </li>
+                    <li class="hover-effect-danger right-side__inside__body__search-utilities__summary__category-tag-group__item">
+                        <app-category-tag [categoryTagName]="'Phong cảnh'" style="display: contents"></app-category-tag>
+                    </li>
+                    <li class="hover-effect-danger right-side__inside__body__search-utilities__summary__category-tag-group__item">
+                        <app-category-tag [categoryTagName]="'Phong cảnh'" style="display: contents"></app-category-tag>
+                    </li>
+                    <li class="hover-effect-danger right-side__inside__body__search-utilities__summary__category-tag-group__item">
+                        <app-category-tag [categoryTagName]="'Phong cảnh'" style="display: contents"></app-category-tag>
+                    </li>
+                </ul>
             </div>
 
             <div class="right-side__inside__body__search-utilities__sort">
+                <div tabindex="0" (blur)="toggleSortOptionBlur()" (click)="toggleSortOptions()" class="right-side__inside__body__search-utilities__sort__select select">
+                    <span class="hover-effect-silver-border right-side__inside__body__search-utilities__sort__select__span">
+                        {{ sortOption }}
+                    </span>
+                    <div class="hover-effect-silver-border right-side__inside__body__search-utilities__sort__select__icon icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
 
+                    <ul *ngIf="isSortOptionShow" class="right-side__inside__body__search-utilities__sort__select__option-group options">
+                        <li (click)="chooseSortOption('Mặc định')" class="hover-effect-yellow-bright right-side__inside__body__search-utilities__sort__select__option-group__item">
+                            Mặc định
+                        </li>
+                        <li (click)="chooseSortOption('Ngẫu nhiên')" class="hover-effect-yellow-bright right-side__inside__body__search-utilities__sort__select__option-group__item">
+                            Ngẫu nhiên
+                            <i class="fa-solid fa-shuffle"></i>
+                        </li>
+                        <li (click)="chooseSortOption('Mới nhất')" class="hover-effect-yellow-bright right-side__inside__body__search-utilities__sort__select__option-group__item">
+                            Mới nhất
+                            <i class="fa-regular fa-clock"></i>
+                        </li>
+                        <li (click)="chooseSortOption('Xem nhiều nhất')" class="hover-effect-yellow-bright right-side__inside__body__search-utilities__sort__select__option-group__item">
+                            Xem nhiều nhất
+                            <i class="fa-regular fa-eye"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

@@ -1,5 +1,6 @@
-/* TEXT */
-input[type="text"], input[type="password"] {
+/*#region TEXT*/
+input[type="text"],
+input[type="password"] {
     color: var(--dark-text-color);
     width: 100%;
     padding: 12px 18px;
@@ -22,7 +23,9 @@ input:focus {
     opacity: 0.81;
 }
 
-/* CHECKBOX */
+/*#endregion*/
+
+/*#region CHECKBOX*/
 input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
@@ -62,3 +65,52 @@ input[type="checkbox"]:disabled {
     color: var(--dark-scrollbar-thumb);
     cursor: not-allowed;
 }
+
+/*#endregion*/
+
+/*#region SELECT-OPTION */
+.select {
+    height: 100%;
+    border: 1px solid var(--dark-border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-radius-1);
+    position: relative;
+    cursor: pointer;
+}
+
+.select span {
+    padding: 6px;
+    padding-left: 12px;
+    font-size: var(--fs-less-1);
+    opacity: 0.81;
+}
+
+.select .icon {
+    height: 100%;
+    border-left: 1px solid var(--dark-border-color);
+    padding: 6px 9px;
+    background-color: var(--level1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select .icon i {
+    margin-top: 3px;
+}
+
+.select .options {
+    position: absolute;
+    top: 111%;
+    left: -0.5%;
+    width: 101.4%;
+    border: 1px solid var(--dark-border-color);
+    border-radius: var(--border-radius-1);
+    background-color: var(--level1-color);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fs-less-1);
+}
+/*#endregion*/

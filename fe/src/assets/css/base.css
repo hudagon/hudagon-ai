@@ -168,7 +168,7 @@ body {
 
 /*#region HOVER EFFECT*/
 .hover-effect-yellow-bright,
-.hover-effect-2,
+.hover-effect-danger,
 .hover-effect-painting-tag,
 .hover-effect-button-1,
 .hover-effect-menu-1,
@@ -193,7 +193,7 @@ body {
     filter: brightness(1.35);
 }
 
-.hover-effect-2:hover {
+.hover-effect-danger:hover {
     color: var(--danger-color);
     filter: brightness(1.2);
 }
