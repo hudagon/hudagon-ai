@@ -1,0 +1,41 @@
+.wrapper {
+    width: 100%;
+    padding: 12px;
+}
+
+.wrapper__accordion-group {
+    width: 100%;
+}
+
+.wrapper__accordion {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    background-color: var(--level3-color);
+    border-radius: var(--border-radius-1);
+    color: var(--dark-text-color);
+    width: 100%;
+    border: 1px solid var(--dark-level2-border-color);
+    transition: 0.4s;
+    padding: 15px 18px;
+}
+
+.wrapper__accordion i {
+    margin-left: auto;
+}
+
+.wrapper__accordion__dropdown-level2-body {
+
+}
+
+.wrapper__panel {
+
+}
+
+.wrapper__panel__wrapper {
+
+}
+
+.painting-tag__content {
+
+}

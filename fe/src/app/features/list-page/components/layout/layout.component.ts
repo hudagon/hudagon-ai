@@ -1,5 +1,6 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { MediaQueriesService } from 'src/app/core/services/media-queries.service';
+import { ListPageDesktopBodyComponent } from '../list-page-desktop-body/list-page-desktop-body.component';
 
 @Component({
   selector: 'app-layout',
@@ -7,6 +8,8 @@ import { MediaQueriesService } from 'src/app/core/services/media-queries.service
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
+  @ViewChild('listPageDesktopBody', {static: false}) listPageDesktopBody: ListPageDesktopBodyComponent | undefined;
+
   isContentLoaded: boolean = true;
   isLoginModalOpen: boolean = false;
 
@@ -20,6 +23,12 @@ export class LayoutComponent implements OnInit {
 
   }
 
+  handleToggleCategoryContent($event: any) {
+    if (this.listPageDesktopBody) {
+      this.listPageDesktopBody.toggleCategoryContent($event);
+    }
+  }
+
   getBreakpointValues(screen: string) {
     return this.mediaQueriesService.breakPointMap.get(screen);
   }
@@ -29,7 +38,6 @@ export class LayoutComponent implements OnInit {
   }
 
   handleToggleLoginModal() {
-    console.log('vô');
     this.isLoginModalOpen = !this.isLoginModalOpen;
     this.changeDectector.markForCheck();
   }

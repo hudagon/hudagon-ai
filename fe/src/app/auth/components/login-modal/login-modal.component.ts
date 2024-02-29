@@ -1,5 +1,5 @@
 import { SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class LoginModalComponent implements OnInit {
   @Output() notifyToggleLoginModal = new EventEmitter();
+  @Input() z_index: string = '0';
   user: SocialUser | undefined;
 
   constructor(
@@ -17,6 +18,13 @@ export class LoginModalComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    if (this.z_index) {
+      const wrapper = document.getElementById('wrapper');
+      if (wrapper) {
+        wrapper.style.zIndex = this.z_index;
+      }
+    }
+
     this.socialAuthService.authState.subscribe((user) => {
       this.user = user;
       if (user) {

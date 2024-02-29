@@ -83,6 +83,20 @@
     padding: 0 12px;
     padding-right: 21px;
     background-color: var(--level1-color);
+    transition: 0.3s ease-in-out;
+}
+
+.left-side__inside__lower__level1-list__item i {
+    transition: 0.3s ease-in-out;
+}
+
+.left-side__inside__lower__level1-list__item.chosen {
+    color: var(--secondary-color);
+    background-color: var(--level2-color);
+}
+
+.left-side__inside__lower__level1-list__item.chosen i {
+    transform: rotate(180deg);
 }
 
 .left-side__inside__lower__term-and-service {

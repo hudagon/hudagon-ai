@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output, ViewChild, ViewContainerRef } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, OnInit, Output, ViewChild, ViewContainerRef } from '@angular/core';
 import { DesktopCartDropdownComponent } from './desktop-cart-dropdown/desktop-cart-dropdown.component';
 import { AuthService } from 'src/app/auth/services/auth.service';
 
@@ -7,23 +7,95 @@ import { AuthService } from 'src/app/auth/services/auth.service';
   templateUrl: './list-page-desktop-body.component.html',
   styleUrls: ['./list-page-desktop-body.component.css']
 })
-export class ListPageDesktopBodyComponent implements OnInit {
+export class ListPageDesktopBodyComponent implements OnInit, AfterViewInit {
   @Output() notifyToggleLoginModal: EventEmitter<string> = new EventEmitter();
   @ViewChild('desktopCartDropDown', { read: ViewContainerRef }) container: ViewContainerRef | undefined;
   cartFirsTimehover: boolean = false;
 
+  // DOM ELEMENT
+  rightSideBody: any;
+  scrollToTopButton: any;
+  searchInputDOM: any;
+
   // Search Sort Info
+  searchInput: string = "";
   sortOption: string = 'Sắp xếp';
   isSortOptionShow: boolean = false;
   isSortPristine: boolean = true;
+
+  // SOMETHING ELSE
+  displayedCategory: string = "subject";
+  displayedCategoryTitle: string = "";
+  isCategoryContentShow: boolean = true;
 
   constructor(
     private authService: AuthService
   ) {
   }
 
+  ngAfterViewInit(): void {
+    this.rightSideBody = document.getElementById("right-side-body");
+    this.scrollToTopButton = document.getElementById("scroll-to-top");
+    this.searchInputDOM = document.getElementById("searchInput");
+
+    this.searchInputDOM?.focus();
+  }
+
   ngOnInit(): void {
-    document.getElementById("searchInput")?.focus();
+  }
+
+  toggleCategoryContent($event: any) {
+    if ($event.category == this.displayedCategory) {
+      this.turnOffCategoryContent();
+      return;
+    }
+
+    this.isCategoryContentShow = true;
+    this.displayedCategory = $event.category;
+
+    switch (this.displayedCategory) {
+      case "subject":
+        this.displayedCategoryTitle = "Chủ thể";
+        break;
+      case "topic":
+        this.displayedCategoryTitle = "Chủ đề";
+        break;
+      case "style":
+        this.displayedCategoryTitle = "Phong cách";
+        break;
+      case "ratio":
+        this.displayedCategoryTitle = "Tỉ lệ";
+        break;
+      case "color":
+        this.displayedCategoryTitle = "Màu sắc";
+        break;
+    }
+  }
+
+  turnOffCategoryContent() {
+    this.isCategoryContentShow = false;
+    this.displayedCategory = "";
+  }
+
+  resetInput() {
+    this.searchInput = "";
+    this.searchInputDOM?.focus();
+  }
+
+  checkScroll() {
+    if (this.rightSideBody.scrollTop >= 120) {
+      if (!this.scrollToTopButton?.classList.contains("display")) {
+        this.scrollToTopButton?.classList.add("display");
+      }
+    } else {
+      if (this.scrollToTopButton?.classList.contains("display")) {
+        this.scrollToTopButton?.classList.remove("display");
+      }
+    }
+  }
+
+  scrollToTop() {
+    this.rightSideBody?.scroll({ top: 0, behavior: 'smooth' });
   }
 
   toggleSortOptions() {
@@ -33,7 +105,7 @@ export class ListPageDesktopBodyComponent implements OnInit {
   toggleSortOptionBlur() {
     if (this.isSortOptionShow) {
       this.isSortOptionShow = !this.isSortOptionShow;
-    } 
+    }
   }
 
   chooseSortOption(chosen: string) {

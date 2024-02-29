@@ -5,6 +5,7 @@
     height: 100%;
     border: 1px solid var(--dark-border-color);
     border-radius: var(--border-radius-2);
+    position: relative;
 }
 
 .right-side__inside__header {
@@ -15,6 +16,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     position: relative;
+    height: 60px;
 }
 
 .right-side__inside__header__search-group {
@@ -86,25 +88,26 @@
 
 .right-side__inside__header__user-group__cart-group__dropdown {
     position: absolute;
-    top: 24px;
-    right: 6px;
+    top: 18px;
+    right: -5px;
     min-width: 210px;
     min-height: 90px;
     border: 1px solid var(--dark-border-color);
     background-color: var(--dark-panel-color);
-    z-index: 3;
+    z-index: 4;
     border-radius: var(--border-radius-2);
     display: none;
 }
 
-.right-side__inside__header__user-group__cart-group__dropdown::after {
+.right-side__inside__header__user-group__cart-group__dropdown::before {
     content: "";
     position: absolute;
-    top: -12px;
-    right: -6px;
-    width: 66px;
-    height: 12px;
+    top: -9px;
+    right: 0;
+    width: 119px;
+    height: 18px;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .right-side__inside__header__user-group__cart-group:hover .right-side__inside__header__user-group__cart-group__dropdown {
@@ -116,21 +119,28 @@
     width: 100%;
     padding: 12px;
     padding-bottom: 0px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .right-side__inside__body__search-utilities {
     width: 100%;
+    position: sticky;
+    top: 0;
+    padding-top: 9px;
+    background-color: var(--dark-panel-color);
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 12px;
+    flex-direction: column;
 }
 
 .right-side__inside__body__search-utilities__summary {
     display: flex;
     align-items: center;
-    overflow: auto;
-    padding-bottom: 15px;
     width: 100%;
 }
 
@@ -151,13 +161,16 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    max-width: 15vw;
+    flex-wrap: wrap;
+    padding-bottom: 9px;
 }
 
 .right-side__inside__body__search-utilities__sort {
-    height: 37.2px;
+    height: 36px;
     position: relative;
-    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    min-width: 60px;
 }
 
 .right-side__inside__body__search-utilities__sort__select{
@@ -174,4 +187,183 @@
 .right-side__inside__body__search-utilities__sort__select__option-group__item .fa-eye {
     position: relative;
     left: 0.72px;
+}
+
+.right-side__inside__body__utilities{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 45px;
+    gap: 12px;
+}
+
+.right-side__inside__body__utilities__reset{
+    border: 1px solid var(--dark-border-color);
+    font-size: var(--fs-less-2);
+    background-color: var(--level3-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8.1px 12px;
+}
+
+.right-side__inside__body__search-utilities__line-2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.right-side__inside__body__gallery {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 9px;
+}
+
+.right-side__inside__body__gallery__utilities {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.right-side__inside__body__gallery__item {
+    break-inside: avoid-column;
+    margin-bottom: var(--masonry-gap);
+    position: relative;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.right-side__inside__body__gallery__item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-1);
+}
+
+.right-side__inside__body__gallery__exhibition {
+    width: 100%;
+    flex: 1;
+    column-gap: var(--masonry-gap);
+    column-count: 5;
+    position: relative;
+    z-index: 0;
+}
+
+.right-side__inside__body__gallery__exhibition__item {
+    break-inside: avoid-column;
+    margin-bottom: var(--masonry-gap);
+    position: relative;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.right-side__inside__body__gallery__exhibition__item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-1);
+}
+
+.right-side__inside__body__gallery__scroll-to-top {
+    position: absolute;
+    bottom: 18px;
+    right: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid var(--dark-border-color);
+    background-color: var(--level1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side__inside__body__gallery__scroll-to-top.display {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.right-side__inside__category {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 24%;
+    border-right: 1px solid var(--dark-level2-border-color);
+    background-color: var(--level2-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    transition: all ease-in-out 0.3s;
+}
+
+.right-side__inside__category.activated {
+    width: 300px;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.right-side__inside__category__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    padding-right: 21px;
+    height: 60px;
+    border-bottom: 1px solid var(--dark-border-color);
+}
+
+.right-side__inside__category__header i {
+    margin: 0;
+}
+
+.right-side__inside__category__header__tittle {
+
+}
+
+.right-side__inside__category__body {
+    width: 100%;
+}
+
+/* Extra Large screens and TV */
+@media (min-width: 1603px) {
+    .right-side__inside__body__gallery__exhibition {
+        column-count: 5;
+    }
+}
+
+/* Below Large screens and desktops [NORMAL SCREEN] */
+@media (max-width: 1602px) {
+    .right-side__inside__body__gallery__exhibition {
+        column-count: 4;
+    }
+}
+
+/* Below Average screen [SMALL SCREEN] */
+@media (max-width: 1333px) {
+    .right-side__inside__body__gallery__exhibition {
+        column-count: 3;
+    }
+}
+
+/* Below Tablets [LARGE PHONE] */
+@media (max-width: 739px) {
+    .right-side__inside__body__gallery__exhibition {
+        column-count: 2;
+    }
 }
