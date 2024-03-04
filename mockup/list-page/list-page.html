@@ -1852,19 +1852,23 @@
     for (let i = 0; i < dropDownButtonLevel2.length; i++) {
         dropDownButtonLevel2[i].addEventListener("click",
             function () {
-                this.children[1].classList.toggle("activated"); this.classList.toggle("activated"); let
-                    panel = this.nextElementSibling; if (panel.style.maxHeight) { panel.style.maxHeight = null; } else {
-                        let
-                        arrLevel3Panel = panel.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper");
-                        if (arrLevel3Panel) {
-                            let totalHeight = 0; for (let i = 0; i < arrLevel3Panel.length; i++) {
-                                totalHeight
-                                += arrLevel3Panel[i].scrollHeight;
-                            } panel.style.maxHeight = totalHeight + "px";
-                        } else {
-                            panel.style.maxHeight = panel.scrollHeight + "px";
-                        }
+                this.children[1].classList.toggle("activated"); 
+                this.classList.toggle("activated"); 
+                let panel = this.nextElementSibling; 
+                if (panel.style.maxHeight) { 
+                    panel.style.maxHeight = null; 
+                } else {
+                    let arrLevel3Panel = panel.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper");
+                    if (arrLevel3Panel) {
+                        let totalHeight = 0; 
+                        for (let i = 0; i < arrLevel3Panel.length; i++) {
+                            totalHeight += arrLevel3Panel[i].scrollHeight;
+                        } 
+                        panel.style.maxHeight = totalHeight + "px";
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
                     }
+                }
             });
     } 
     

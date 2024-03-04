@@ -1,5 +1,5 @@
 .landing-page-wrapper {
-    height: 100svh;
+    height: 100dvh;
     width: 100vw;
     padding-bottom: 21px;
     max-height: 1200px !important;
@@ -8,10 +8,10 @@
     position: relative;
 
     /* Landing Page Height */
-    --top-info-height: 3.6svh;
-    --header-height: 7.6svh;
-    --banner-height: 50svh;
-    --service-height: 33svh;
+    --top-info-height: 3.6dvh;
+    --header-height: 7.6dvh;
+    --banner-height: 50dvh;
+    --service-height: 33dvh;
 }
 
 app-landing-page-desktop-body {

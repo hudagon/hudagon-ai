@@ -51,6 +51,7 @@ body {
     white-space: nowrap;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -125,9 +126,9 @@ body {
     --light-text-color: #dfdfdf;
 
     /* Painting filter Menu color */
-    --level3-color: rgba(36, 36, 36, 0.918);
-    --level2-color: rgba(24, 24, 24, 0.952);
-    --level1-color: rgba(15, 15, 15, 0.925);
+    --level3-color: rgba(21, 21, 21, 0.918);
+    --level2-color: rgba(15, 15, 15, 0.952);
+    --level1-color: rgba(6, 6, 6, 0.925);
 
     /* Overlay color */
     --overlay-color: rgba(0, 0, 0, 0.72);

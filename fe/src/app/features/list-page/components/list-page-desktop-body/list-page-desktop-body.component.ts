@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 })
 export class ListPageDesktopBodyComponent implements OnInit, AfterViewInit {
   @Output() notifyToggleLoginModal: EventEmitter<string> = new EventEmitter();
+  @Output() notifyResetAsideCategory = new EventEmitter();
   @ViewChild('desktopCartDropDown', { read: ViewContainerRef }) container: ViewContainerRef | undefined;
   cartFirsTimehover: boolean = false;
 
@@ -24,7 +25,7 @@ export class ListPageDesktopBodyComponent implements OnInit, AfterViewInit {
   isSortPristine: boolean = true;
 
   // SOMETHING ELSE
-  displayedCategory: string = "subject";
+  displayedCategory: string = "style";
   displayedCategoryTitle: string = "";
   isCategoryContentShow: boolean = true;
 
@@ -46,7 +47,7 @@ export class ListPageDesktopBodyComponent implements OnInit, AfterViewInit {
 
   toggleCategoryContent($event: any) {
     if ($event.category == this.displayedCategory) {
-      this.turnOffCategoryContent();
+      this.turnOffCategoryContent("");
       return;
     }
 
@@ -72,7 +73,11 @@ export class ListPageDesktopBodyComponent implements OnInit, AfterViewInit {
     }
   }
 
-  turnOffCategoryContent() {
+  turnOffCategoryContent(returnCSS: string) {
+    if (returnCSS !== "") {
+      this.notifyResetAsideCategory.emit({ displayedCategory : this.displayedCategory });
+    }
+
     this.isCategoryContentShow = false;
     this.displayedCategory = "";
   }

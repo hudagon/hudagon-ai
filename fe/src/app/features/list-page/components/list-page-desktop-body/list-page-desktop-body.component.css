@@ -49,7 +49,7 @@
 }
 
 .right-side__inside__header__search-group__search-bar {
-    padding: 2.7% 66px 2.4% 18px;
+    padding: 2.1% 66px 2.4% 18px;
 }
 
 .right-side__inside__header__search-group__search-bar::placeholder {
@@ -296,10 +296,11 @@
 .right-side__inside__category {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     width: 24%;
     border-right: 1px solid var(--dark-level2-border-color);
+    border-top-left-radius: var(--border-radius-2);
+    border-bottom-left-radius: var(--border-radius-2);
     background-color: var(--level2-color);
     display: flex;
     flex-direction: column;
@@ -309,6 +310,8 @@
     opacity: 0;
     width: 0px;
     transition: all ease-in-out 0.3s;
+    padding-bottom: 12px;
+    height: 100%;
 }
 
 .right-side__inside__category.activated {
@@ -324,20 +327,21 @@
     justify-content: space-between;
     padding: 0 15px;
     padding-right: 21px;
-    height: 60px;
+    min-height: 60px;
     border-bottom: 1px solid var(--dark-border-color);
 }
 
 .right-side__inside__category__header i {
     margin: 0;
-}
-
-.right-side__inside__category__header__tittle {
-
+    padding: 6px 9px;
+    margin-right: 3px;
 }
 
 .right-side__inside__category__body {
     width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Extra Large screens and TV */

@@ -97,6 +97,7 @@
 
 .left-side__inside__lower__level1-list__item.chosen i {
     transform: rotate(180deg);
+    color: var(--secondary-color);
 }
 
 .left-side__inside__lower__term-and-service {

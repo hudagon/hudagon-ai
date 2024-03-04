@@ -19,11 +19,11 @@
 
         <!-- LANDING PAGE BODY -->
         <div class="row">
-            <app-landing-page-desktop-body
+            <app-landing-page-desktop-body 
                 style="display: contents" *ngIf="(getViewportWidth() > getBreakpointValues('TABLET')!)"></app-landing-page-desktop-body>
-            <app-landing-page-tablet-body
+            <app-landing-page-tablet-body 
                 style="display: contents" *ngIf="(getViewportWidth() <= getBreakpointValues('TABLET')!) && (getViewportWidth() > getBreakpointValues('LARGE_PHONE')!)"></app-landing-page-tablet-body>
-            <app-landing-page-mobile-body
+            <app-landing-page-mobile-body 
                 style="display: contents" *ngIf="(getViewportWidth() <= getBreakpointValues('LARGE_PHONE')!)"></app-landing-page-mobile-body>
         </div>
 

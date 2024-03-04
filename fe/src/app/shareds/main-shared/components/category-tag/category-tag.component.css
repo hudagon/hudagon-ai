@@ -8,13 +8,9 @@
     border-radius: 21px;
     font-size: var(--fs-less-2);
     gap: 9px;
-    padding: 9px 12px;
+    padding: 9px 18px;
     max-width: 150px;
     overflow: hidden;
-}
-
-.wrapper i {
-
 }
 
 .wrapper__text{

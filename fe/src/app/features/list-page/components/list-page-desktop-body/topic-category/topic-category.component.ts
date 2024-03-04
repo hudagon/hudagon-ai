@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./topic-category.component.css']
 })
 export class TopicCategoryComponent {
+  isViewLoaded: boolean = true;
 
+  addToFilter($event: MouseEvent) {
+
+  }
 }
