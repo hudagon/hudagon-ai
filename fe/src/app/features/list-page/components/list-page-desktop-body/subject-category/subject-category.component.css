@@ -36,6 +36,7 @@
     border: 1px solid var(--dark-level2-border-color);
     transition: 0.4s;
     padding: 15px 18px;
+    padding-bottom: 13.2px;
     height: 66px;
 }
 
@@ -57,7 +58,7 @@
 
 .wrapper__panel__wrapper {
     width: 100%;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     gap: 12px;
     padding: 12px;
@@ -81,17 +82,13 @@
     pointer-events: all;
 }
 
-.wrapper__panel.toggle .wrapper__panel__wrapper {
-    display: flex;
-}
-
-
 .wrapper__panel__wrapper__tag-filter {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     border: 1px solid var(--dark-level2-border-color);
     padding: 9px 18px;
+    padding-bottom: 8.1px;
     border-radius: 27px;
     font-size: var(--fs-less-1);
     gap: 6px;

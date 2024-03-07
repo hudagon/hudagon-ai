@@ -148,7 +148,6 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-bottom: 3px;
     font-size: var(--fs-less-1);
 }
 
@@ -286,6 +285,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2.4px;
 }
 
 .right-side__inside__body__gallery__scroll-to-top.display {

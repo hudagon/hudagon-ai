@@ -16,6 +16,7 @@
     position: relative;
     height: 72px;
     border-radius: var(--border-radius-1);
+    overflow: hidden;
 }
 
 .wrapper__accordion-group__img {
@@ -29,7 +30,6 @@
 
 .wrapper__accordion {
     display: flex;
-    line-height: 2;
     position: relative;
     z-index: 2;
     align-items: center;
@@ -42,6 +42,7 @@
     border: 1px solid var(--dark-level2-border-color);
     transition: 0.4s;
     padding: 15px 18px;
+    padding-bottom: 14.1px;
 }
 
 .wrapper__accordion input {

@@ -6,9 +6,6 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
   styleUrls: ['./subject-category.component.css']
 })
 export class SubjectCategoryComponent implements OnInit, AfterViewInit {
-  doSomething() {
-    console.log("hahaha");
-  }
   isViewLoaded: boolean = true;
 
   ngOnInit(): void {

@@ -25,9 +25,9 @@ export class ListPageDesktopBodyComponent implements OnInit, AfterViewInit {
   isSortPristine: boolean = true;
 
   // SOMETHING ELSE
-  displayedCategory: string = "style";
+  displayedCategory: string = "";
   displayedCategoryTitle: string = "";
-  isCategoryContentShow: boolean = true;
+  isCategoryContentShow: boolean = false;
 
   constructor(
     private authService: AuthService
@@ -65,7 +65,7 @@ export class ListPageDesktopBodyComponent implements OnInit, AfterViewInit {
         this.displayedCategoryTitle = "Phong cách";
         break;
       case "ratio":
-        this.displayedCategoryTitle = "Tỉ lệ";
+        this.displayedCategoryTitle = "Khung hình";
         break;
       case "color":
         this.displayedCategoryTitle = "Màu sắc";

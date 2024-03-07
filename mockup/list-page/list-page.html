@@ -155,7 +155,8 @@
                                 class="hover-effect-yellow-bright list-page-wrapper__right-side__content__filter-bar__body__accordion">
                                 <input type="checkbox">
                                 Con người
-                                <i class="list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body fa-solid fa-chevron-down"></i>
+                                <i
+                                    class="list-page-wrapper__right-side__content__filter-bar__body__accordion__dropdown-level2-body fa-solid fa-chevron-down"></i>
                             </div>
                             <div class="list-page-wrapper__right-side__content__filter-bar__body__panel">
                                 <div class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper">
@@ -590,8 +591,7 @@
                                     <span
                                         class="list-page-wrapper__right-side__content__filter-bar__body__panel__style-define__slash"></span>
                                 </div>
-                                <div
-                                    class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper style-panel level3">
+                                <div class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper style-panel level3">
                                     <div
                                         class="list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper__style-group">
                                         <input type="checkbox">
@@ -1122,8 +1122,10 @@
                                 0
                             </span>
 
-                            <div class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down">
-                                <ul class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list">
+                            <div
+                                class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down">
+                                <ul
+                                    class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list">
                                     <li
                                         class="list-page-wrapper__right-side__content__header__user-group__cart-group__drop-down__product-list__item">
                                         <img src="../assets/images/test-cat.jpg"
@@ -1852,25 +1854,26 @@
     for (let i = 0; i < dropDownButtonLevel2.length; i++) {
         dropDownButtonLevel2[i].addEventListener("click",
             function () {
-                this.children[1].classList.toggle("activated"); 
-                this.classList.toggle("activated"); 
-                let panel = this.nextElementSibling; 
-                if (panel.style.maxHeight) { 
-                    panel.style.maxHeight = null; 
+                this.children[1].classList.toggle("activated");
+                this.classList.toggle("activated");
+                let panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
                 } else {
                     let arrLevel3Panel = panel.getElementsByClassName("list-page-wrapper__right-side__content__filter-bar__body__panel__wrapper");
                     if (arrLevel3Panel) {
-                        let totalHeight = 0; 
+                        let totalHeight = 0;
                         for (let i = 0; i < arrLevel3Panel.length; i++) {
                             totalHeight += arrLevel3Panel[i].scrollHeight;
-                        } 
+                        }
                         panel.style.maxHeight = totalHeight + "px";
                     } else {
                         panel.style.maxHeight = panel.scrollHeight + "px";
                     }
                 }
             });
-    } 
-    
-    </script>
+    }
+
+</script>
+
 </html>

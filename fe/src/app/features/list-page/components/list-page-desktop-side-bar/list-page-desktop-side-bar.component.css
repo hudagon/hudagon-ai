@@ -81,6 +81,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 12px;
+    padding-top: 0.9px;
     padding-right: 21px;
     background-color: var(--level1-color);
     transition: 0.3s ease-in-out;

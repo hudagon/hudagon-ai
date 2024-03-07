@@ -54,7 +54,7 @@
     width: 100%;
     padding: 9px 18px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     background-color: var(--level1-color);
     border-bottom-left-radius: var(--border-radius-2);
     border-bottom-right-radius: var(--border-radius-2);
